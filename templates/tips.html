@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovate.it</title>
+</head>
+<body>
+    {% for tip in tips %}
+        {{ tip.user_name }}<br>
+        {{ tip.location }}<br>
+        {{ tip.category_name }}<br>
+        {{ tip.tip }}<br>
+    {% endfor %}
+</body>
+</html>
