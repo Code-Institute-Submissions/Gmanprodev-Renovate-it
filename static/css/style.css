@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.brand-logo {
+    font-family: Yellowtail, sans-serif;
+    letter-spacing: 2px;
+}
+
+.sidenav-header {
+    font-family: Yellowtail, sans-serif;
+    letter-spacing: 2px;
+}
+
+.sidenav li>a {
+    color: white;
+}
+
+nav .brand-logo {
+    margin-left: 5px;
 }
