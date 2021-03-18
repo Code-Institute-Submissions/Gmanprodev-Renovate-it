@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Sign Up</h3>
+    <h3 class="center-align">Sign Up</h3>
 
-<div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
-       <div class="card-panel teal">
+    <div class="row">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signup') }}">
+        <div class="card-panel teal">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-plus prefix white-text text-darken-4"></i>
@@ -25,8 +25,16 @@
                     Sign Up <i class="fas fa-sign-in-alt"></i>
                 </button>
             </div>
-       </div>
-    </form>
-</div>
+        </div>
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align">
+                Already Signed Up? <a href="{{ url_for('login') }}" class="teal lighten-2 text-darken-4">Log In</a>
+            </p>
+        </div>
+    </div>
 
 {% endblock %}
