@@ -35,5 +35,13 @@ nav .brand-logo {
 }
 
 .parallax-container {
-    height: 300px;
+    height: 500px;
+}
+
+.hero-text {
+    font-family: Yellowtail, sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: #20b2aa;
+    font-weight: 400;
 }
