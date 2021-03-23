@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
-html {
-  scroll-behavior: smooth;
-  font-size: calc(1em + 1vw);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -86,8 +81,4 @@ nav .brand-logo {
 
 .social-links {
     margin-top: 10px;
-}
-
-.footer {
-    margin: 0;
 }
