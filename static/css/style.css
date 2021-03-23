@@ -2,7 +2,19 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: calc(1em + 1vw);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
 
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -62,4 +74,20 @@ nav .brand-logo {
     .hideMe {
         display: none;
     }
+}
+
+.footer-text {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: Yellowtail, sans-serif;
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.footer {
+    margin: 0;
 }
