@@ -39,6 +39,8 @@ nav .brand-logo {
 
 .parallax {
     opacity: 0.3;
+    width: 100%;
+    height: auto;
 }
 
 .parallax-container {
@@ -81,4 +83,8 @@ nav .brand-logo {
 
 .social-links {
     margin-top: 10px;
+}
+
+.footer {
+    position: sticky;
 }
