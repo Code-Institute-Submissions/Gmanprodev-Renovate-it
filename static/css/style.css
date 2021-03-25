@@ -130,6 +130,7 @@ nav .brand-logo {
 .bottom-parallax {
     padding-top: 15%;
     padding-bottom: 15%;
+    background-color: #f7e7ce;
 }
 
 @media (min-width: 936px) {
