@@ -65,12 +65,18 @@ nav .brand-logo {
     color: #20b2aa;
     font-weight: 300;
     margin-bottom: 1%; 
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
-@media (max-width: 486px) {
-    .hideMe {
-        display: none;
+@media (max-width: 390px) {
+    .hero-text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-text-1 {
+        font-size: 23px;
     }
 }
 
