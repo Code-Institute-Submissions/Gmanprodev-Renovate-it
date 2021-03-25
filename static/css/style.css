@@ -68,6 +68,16 @@ nav .brand-logo {
     margin-top: 5%;
 }
 
+.hero-text-2 {
+    font-family: 'Yellowtail', sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: #20b2aa;
+    font-weight: 300;
+    margin-bottom: 0; 
+    margin-top: 0;
+}
+
 @media (max-width: 390px) {
     .hero-text {
         font-size: 40px;
@@ -77,6 +87,12 @@ nav .brand-logo {
 @media (max-width: 390px) {
     .hero-text-1 {
         font-size: 23px;
+    }
+}
+
+@media (max-width: 796px) {
+    .hero-text-2 {
+        font-size: 30px;
     }
 }
 
@@ -105,4 +121,25 @@ nav .brand-logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
+}
+
+.row {
+    margin-bottom: auto;
+}
+
+.bottom-parallax {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+@media (min-width: 936px) {
+    .bottom-parallax {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+.text-padding {
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
