@@ -139,3 +139,8 @@ nav .brand-logo {
     padding-bottom: 5%;
     padding-top: 30%;
 }
+
+.section-pad {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
