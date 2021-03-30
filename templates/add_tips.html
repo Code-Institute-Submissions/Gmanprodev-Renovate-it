@@ -8,8 +8,8 @@
                 <div class="card-panel teal">
                     <div class="input-field">
                         <i class="fas fa-folder-open prefix"></i>
-                        <select>
-                            <option value="" disabled selected>Choose your tip category</option>
+                        <select id="category_name" name="category_name" type="text" class="validate" required>
+                            <option value="" disabled selected>Select Your Tip Category</option>
                             <option value="1">Building</option>
                             <option value="2">Architect</option>
                             <option value="3">Decorating</option>
@@ -21,20 +21,20 @@
                             <option value="9">Design</option>
                             <option value="10">Landscaping</option>
                         </select>
-                        <label>Tip Category Select</label>
+                        <label for="category_name">Dropdown</label>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-map-marker-alt prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Location</label>
+                            <input id="location" name="location" minlength="3" maxlength="20" type="text" class="validate" required>
+                            <label for="location">Type Your Location Here</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-comments prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Type your renovation tip here</label>
+                            <textarea id="tip" name="tip" minlength="5" maxlength="50" class="materialize-textarea validate" required></textarea>
+                            <label for="tip">Type Your Renovation Tip Here</label>
                         </div>
                     </div>
                     <div class="row">
