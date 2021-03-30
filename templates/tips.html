@@ -1,25 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for tip in tips %}
-        {{ tip.user_name }}<br>
-        {{ tip.location }}<br>
-        {{ tip.category_name }}<br>
-        {{ tip.tip }}<br>
-    {% endfor %}
-
  <div class="row">
+    {% for tip in tips %}
     <div class="col s12 m7">
         <div class="card">
             <div class="card-image">
                 <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
+                <span class="card-title"><strong>{{ tip.category_name }}</strong></span>
             </div>
             <div class="card-content">
-                <p>Text Content</p>
+                <p><i class="fas fa-user"></i><strong> Username:</strong> {{ tip.user_name }}</p>
+                <p><i class="fas fa-map-marker-alt"></i><strong> Location:</strong> {{ tip.location }}</p>
+                <p><i class="fas fa-comments"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
             </div>
         </div>
     </div>
+    {% endfor %}
   </div>
+
 
 {% endblock %}

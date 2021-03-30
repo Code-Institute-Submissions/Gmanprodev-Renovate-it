@@ -27,7 +27,7 @@ def index():
 
 @app.route("/get_tips")
 def get_tips():
-    tips = mongo.db.tips.find()
+    tips = list(mongo.db.tips.find())
     return render_template("tips.html", tips=tips)
 
 
