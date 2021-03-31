@@ -83,9 +83,9 @@ def login():
 def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-
+    tips = mongo.db.tips.find()
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template("profile.html", username=username, tips=tips)
 
     return redirect(url_for("login"))
 
