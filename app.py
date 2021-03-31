@@ -79,11 +79,11 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/profile/<username>", methods=["GET", "POST"])
+@app.route("/profile/<username>")
 def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    tips = mongo.db.tips.find()
+    tips = list(mongo.db.tips.find({"username": session["user"]}))
     if session["user"]:
         return render_template("profile.html", username=username, tips=tips)
 
