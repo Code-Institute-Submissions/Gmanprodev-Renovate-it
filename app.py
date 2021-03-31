@@ -63,10 +63,10 @@ def login():
         if existing_user:
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
                         request.form.get("username")))
-                    return redirect(url_for(
+                return redirect(url_for(
                         "profile", username=session["user"]))
             else:
                 flash("Incorrect Username or Password")
@@ -97,8 +97,19 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_tips")
+@app.route("/add_tips", methods=["GET", "POST"])
 def add_tips():
+    if request.method == "POST":
+        tip = {
+            "category_name": request.form.get("category_name"),
+            "username": session["user"],
+            "location": request.form.get("location"),
+            "tip": request.form.get("tip")
+        }
+        mongo.db.tips.insert_one(tip)
+        flash("Tip Successfully Added")
+        return redirect(url_for("get_tips"))
+
     categories = mongo.db.categories.find().sort("category_name, 1")
     return render_template("add_tips.html", categories=categories)
 
