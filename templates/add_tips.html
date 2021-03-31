@@ -8,18 +8,11 @@
                 <div class="card-panel teal">
                     <div class="input-field">
                         <i class="fas fa-folder-open prefix"></i>
-                        <select id="category_name" name="category_name" type="text" class="validate" required>
+                        <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Select Your Tip Category</option>
-                            <option value="1">Building</option>
-                            <option value="2">Architect</option>
-                            <option value="3">Decorating</option>
-                            <option value="4">Flooring</option>
-                            <option value="5">Plumbing</option>
-                            <option value="6">Electrical</option>
-                            <option value="7">Glazing</option>
-                            <option value="8">Roofing</option>
-                            <option value="9">Design</option>
-                            <option value="10">Landscaping</option>
+                            {% for category in categories %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endfor %}
                         </select>
                         <label for="category_name">Dropdown</label>
                     </div>
