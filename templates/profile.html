@@ -17,7 +17,7 @@
                          <p><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
                     </div>
                     <div class="card-action">
-                        <a href="{{ url_for('edit_tips', tips=tips._id) }}" class="btn-small waves-effect waves-light">Edit</a>
+                        <a href="{{ url_for('edit_tips', tips_id=tip._id) }}" class="btn-small waves-effect waves-light">Edit</a>
                         <a href="#" class="btn-small red waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="Are you sure you want to delete ?">Delete</a>
                     </div>
                  </div>

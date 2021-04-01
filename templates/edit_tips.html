@@ -4,14 +4,14 @@
     <h3 class="light-blue-text text-darken-4 center-align">Edit Tips</h3>
 
         <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_tips, tips=tips._id') }}">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_tips', tips_id=tips._id) }}">
                 <div class="card-panel teal">
                     <div class="input-field">
                         <i class="fas fa-folder-open prefix"></i>
                         <select id="category_name" name="category_name" class="validate" required>
-                            <option value="" disabled selected>Select Your Tip Category</option>
+                            <option value="" disabled selected>{{ tips.category_name }}</option>
                             {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option> 
                             {% endfor %}
                         </select>
                         <label for="category_name">Dropdown</label>
@@ -19,14 +19,14 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-map-marker-alt prefix"></i>
-                            <input id="location" name="location" minlength="3" maxlength="20" type="text" class="validate" required>
+                            <input id="location" name="location" minlength="3" maxlength="20" value="{{ tips.location }}" type="text" class="validate" required>
                             <label for="location">Type Your Location Here</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-comments prefix"></i>
-                            <textarea id="tip" name="tip" minlength="5" maxlength="500" class="materialize-textarea validate" required></textarea>
+                            <input id="tip" name="tip" minlength="5" maxlength="500" value="{{ tips.tip }}" type="text" class="materialize-textarea validate" required>
                             <label for="tip">Type Your Renovation Tip Here</label>
                         </div>
                     </div>
