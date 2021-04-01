@@ -131,6 +131,13 @@ def edit_tips(tips_id):
     return render_template("edit_tips.html", tips=tip, categories=categories)
 
 
+@app.route("/delete_tips/<tips_id>")
+def delete_tips(tips_id):
+    mongo.db.tips.remove({"_id": ObjectId(tips_id)})
+    flash("Tip Deleted")
+    return redirect(url_for("profile"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
