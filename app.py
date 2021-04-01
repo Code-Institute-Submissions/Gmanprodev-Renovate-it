@@ -114,6 +114,23 @@ def add_tips():
     return render_template("add_tips.html", categories=categories)
 
 
+@app.route("/edit_tips/<tips>", methods=["GET", "POST"])
+def edit_tips(tips):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "username": session["user"],
+            "location": request.form.get("location"),
+            "tip": request.form.get("tip")
+        }
+        mongo.db.tips.update({"_id": ObjectId(tips)}, submit)
+        flash("Tip Updated!")
+
+    tips = mongo.db.tips.find_one({"_id": ObjectId(tips)})
+
+    return render_template("edit_recipe.html", tips=tips)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
