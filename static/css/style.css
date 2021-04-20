@@ -52,7 +52,7 @@ nav .brand-logo {
     font-family: 'Yellowtail', sans-serif;
     letter-spacing: 2px;
     font-size: 50px;
-    color: #20b2aa;
+    color: #1d8882;
     font-weight: 400;
     margin-left: 5px;
     margin-right: 5px;
@@ -60,10 +60,10 @@ nav .brand-logo {
 }
 
 .hero-text-1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Yellowtail', sans-serif;
     letter-spacing: 2px;
     font-size: 30px;
-    color: #20b2aa;
+    color: #1d8882;
     font-weight: 500;
     margin-bottom: 1%; 
     margin-top: 10%;
@@ -73,7 +73,7 @@ nav .brand-logo {
     font-family: 'Yellowtail', sans-serif;
     letter-spacing: 2px;
     font-size: 50px;
-    color: #20b2aa;
+    color: #1d8882;
     font-weight: 300;
     margin-bottom: 0; 
     margin-top: 0;
@@ -114,7 +114,7 @@ nav .brand-logo {
 }
 
 .icon-text {
-    color: #20b2aa;
+    color: #1d8882;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
