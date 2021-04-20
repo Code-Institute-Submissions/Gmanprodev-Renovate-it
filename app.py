@@ -135,7 +135,7 @@ def edit_tips(tips_id):
 def delete_tips(tips_id):
     mongo.db.tips.remove({"_id": ObjectId(tips_id)})
     flash("Tip Deleted")
-    return redirect(url_for("profile"))
+    return redirect(url_for("profile", username=session["user"]))
 
 
 if __name__ == "__main__":
