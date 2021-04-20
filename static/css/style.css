@@ -145,3 +145,7 @@ nav .brand-logo {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.height {
+    min-height: calc(100vh - 140px);
+}
