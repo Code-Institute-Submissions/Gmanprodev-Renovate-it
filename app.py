@@ -125,6 +125,7 @@ def edit_tips(tips_id):
         }
         mongo.db.tips.update({"_id": ObjectId(tips_id)}, submit)
         flash("Tip Updated!")
+        return redirect(url_for("profile", username=session["user"]))
 
     tip = mongo.db.tips.find_one({"_id": ObjectId(tips_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
