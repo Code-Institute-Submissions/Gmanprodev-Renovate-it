@@ -3,7 +3,7 @@
 
     <h3 class="light-blue-text text-darken-4 center-align">Community Board</h3>
 
-    <div class="row">
+    <!--<div class="row">
         {% for tip in tips %}
             <div class="col s12 m4 l3">
                 <div class="card">
@@ -14,6 +14,32 @@
                     <div class="card-content">
                         <p><i class="fas fa-user prefix"></i><strong> Username:</strong> {{ tip.username }}</p>
                         <p><i class="fas fa-map-marker-alt prefix"></i><strong> Location:</strong> {{ tip.location }}</p>
+                        <p><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>-->
+
+
+    <div class="row">
+        {% for tip in tips %}
+            <div class="col s12 m4 l3">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{ url_for('static', filename='images/parallax1.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><strong>{{ tip.category_name }}</strong></span>
+                        <p><i class="fas fa-user prefix"></i><strong> Username:</strong> {{ tip.username }}</p>
+                        <p><i class="fas fa-map-marker-alt prefix"></i><strong> Location:</strong> {{ tip.location }}</p>
+                        <p class="text-clamp"><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
+                        <br>
+                        <button class="activator btn-small">Read More</button>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><strong>{{ tip.category_name }}</strong><i class="fas fa-times right"></i></span>
+                        <br>
                         <p><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
                     </div>
                 </div>
