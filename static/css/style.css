@@ -166,3 +166,18 @@ nav .brand-logo {
 .card-panel {
     background-color: #f7e7ce;
 }
+
+.back-to-top {
+    background-color: #f7e7ce;
+    color: teal;
+}
+
+.back-to-top:hover {
+    background-color: #f7e7ce;
+    color: teal;
+}
+
+.back-to-top:active {
+    background-color: #f7e7ce;
+    color: teal;
+}

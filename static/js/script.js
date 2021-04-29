@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.parallax').parallax();
     $('select').formSelect();
     $('.tooltipped').tooltip();
+    $('.modal').modal();
 
         validateMaterializeSelect();
         function validateMaterializeSelect() {
@@ -31,8 +32,8 @@ $(document).ready(function(){
             }
         });
 
-        $(document).ready(function(){
-            $('.modal').modal();
-        });
+        $("#backToTop").click(function() {
+            $("html, body").animate({scrollTop: 0}, 1000);
+         });
     }
 });
