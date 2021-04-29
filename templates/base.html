@@ -24,7 +24,6 @@
                             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                             <li><a href="{{ url_for('get_tips') }}">Top Tips</a></li>
                             <li><a href="{{ url_for('add_tips') }}">Add Tips</a></li>
-                            <li><a href="#">Manage Categories</a></li>
                             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                         {% else %}
                             <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -43,7 +42,6 @@
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('get_tips') }}">Top Tips</a></li>
                         <li><a href="{{ url_for('add_tips') }}">Add Tips</a></li>
-                        <li><a href="#">Manage Categories</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('index') }}">Home</a></li>

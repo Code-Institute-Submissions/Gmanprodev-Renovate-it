@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Add Tips</h3>
+    <h3 class="hero-text text-shadow center-align">Add Tips</h3>
 
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_tips') }}">
-                <div class="card-panel teal">
+                <div class="card-panel">
                     <div class="input-field">
-                        <i class="fas fa-folder-open prefix"></i>
+                        <i class="fas fa-folder-open prefix teal-text"></i>
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Select Your Tip Category</option>
                             {% for category in categories %}
@@ -18,21 +18,21 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-map-marker-alt prefix"></i>
+                            <i class="fas fa-map-marker-alt prefix teal-text"></i>
                             <input id="location" name="location" minlength="3" maxlength="20" type="text" class="validate" required>
                             <label for="location">Type Your Location Here</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="fas fa-comments prefix"></i>
+                            <i class="fas fa-comments prefix teal-text"></i>
                             <textarea id="tip" name="tip" minlength="5" maxlength="500" class="materialize-textarea validate" required></textarea>
                             <label for="tip">Type Your Renovation Tip Here</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 center-align">
-                            <button type="submit" class="btn-large teal lighten-2 darken-4 text-shadow">
+                            <button type="submit" class="btn-large teal text-shadow">
                                 Add Tip <i class="fas fa-plus-square right"></i>
                             </button>
                         </div>
