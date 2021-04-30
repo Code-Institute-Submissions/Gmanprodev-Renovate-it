@@ -149,6 +149,16 @@ def delete_tips(tips_id):
     return redirect(url_for("profile", username=session["user"]))
 
 
+@app.errorhandler(404)  # 404 ERROR
+def page_not_found(error):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)  # 500 ERROR
+def something_went_wrong(error):
+    return render_template('500.html'), 500
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
