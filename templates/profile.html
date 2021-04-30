@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="hero-text text-shadow center-align">{{ username }}'s Profile</h3>    
-    <h4 class="hero-text-1 center-align">Here are the tips you've added</h4> 
+    <h3 class="hero-text text-shadow center-align">{{ username }}'s Profile</h3>  
     <br>
     <div class="row"> 
         {% for tip in tips %}
+            <h4 class="hero-text-1 center-align">Here are the tips you've added</h4>
             <div class="col s12 m4 l3">
                 <div class="card">
                     {% for category in categories %}
@@ -44,13 +44,16 @@
                     </div>
                  </div>
             </div>
+            <br>
+            <div class="center-align">
+                <button id="backToTop" title="Back to top" class="btn back-to-top">Back To Top</button>
+            </div>
+            <br>
+            {% else %}
+                <h4 class="hero-text-1 center-align">You Haven't Added Any Tips Yet</h4>
+                <div class="center-align">
+                    <a href="{{ url_for('add_tips') }}" class="waves-effect waves-light btn text-shadow">Add Tips</a>
+                </div>
         {% endfor %}
-        </div>
-        <br>
-        <div class="center-align">
-            <button id="backToTop" title="Back to top" class="btn back-to-top">Back To Top</button>
-        </div>
-        <br>
-
-
+    </div>
 {% endblock %}
