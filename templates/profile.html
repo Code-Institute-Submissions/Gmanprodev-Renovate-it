@@ -11,7 +11,7 @@
                     {% for category in categories %}
                         {% if category.category_name == tip.category_name %}
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" height="200" src="{{ category.category_image }}">
+                                <img class="activator" height="300" src="{{ category.category_image }}">
                             </div>
                         {% endif %}
                     {% endfor %}
@@ -48,7 +48,7 @@
         </div>
         <br>
         <div class="center-align">
-            <button id="backToTop" title="Back to top" class="waves-effect waves-light btn back-to-top teal-text">Back To Top</button>
+            <button id="backToTop" title="Back to top" class="btn back-to-top">Back To Top</button>
         </div>
         <br>
 
