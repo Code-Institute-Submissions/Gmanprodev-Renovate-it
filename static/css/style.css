@@ -186,3 +186,10 @@ nav .brand-logo {
     width: 50% !important;
     margin-left: 25% !important;
 }
+
+@media (max-width: 630px) {
+    .search-width {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
