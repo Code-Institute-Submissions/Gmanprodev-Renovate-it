@@ -36,7 +36,8 @@ def get_tips():
 def search():
     query = request.form.get("query")
     tips = list(mongo.db.tips.find({"$text": {"$search": query}}))
-    return render_template("tips.html", tips=tips)
+    categories = list(mongo.db.categories.find())
+    return render_template("tips.html", tips=tips, categories=categories)
 
 
 @app.route("/signup", methods=["GET", "POST"])
