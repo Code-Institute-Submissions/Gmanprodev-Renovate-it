@@ -2,8 +2,8 @@ import os
 from flask import (
     Flask, flash, render_template, 
     redirect, request, session, url_for)
-from flask_pymongo import PyMongo 
-from bson.objectid import ObjectId 
+from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -28,8 +28,7 @@ def index():
 @app.route("/get_tips")
 def get_tips():
     tips = list(mongo.db.tips.find())
-    categories = list(mongo.db.categories.find())
-    return render_template("tips.html", tips=tips, categories=categories)
+    return render_template("tips.html", tips=tips)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -70,7 +69,7 @@ def login():
 
         if existing_user:
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                         request.form.get("username")))
@@ -79,7 +78,6 @@ def login():
             else:
                 flash("Incorrect Username or Password")
                 return redirect(url_for("login"))
-
         else:
             flash("Incorrect Username or Password")
             return redirect(url_for("login"))
@@ -92,10 +90,8 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     tips = list(mongo.db.tips.find({"username": session["user"]}))
-    categories = list(mongo.db.categories.find())
     if session["user"]:
-        return render_template("profile.html", username=username, tips=tips,
-            categories=categories)
+        return render_template("profile.html", username=username, tips=tips)
 
     return redirect(url_for("login"))
 
