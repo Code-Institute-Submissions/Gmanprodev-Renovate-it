@@ -25,9 +25,13 @@
         {% for tip in tips %}
             <div class="col s12 m4 l3">
                 <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="{{ url_for('static', filename='images/parallax1.jpg') }}">
-                    </div>
+                    {% for category in categories %}
+                        {% if category.category_name == tip.category_name %}
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" height="200" src="{{ category.category_image }}">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><strong>{{ tip.category_name }}</strong></span>
                         <p><i class="fas fa-user prefix"></i><strong> Username:</strong> {{ tip.username }}</p>

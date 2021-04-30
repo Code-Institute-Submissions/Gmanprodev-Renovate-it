@@ -28,7 +28,8 @@ def index():
 @app.route("/get_tips")
 def get_tips():
     tips = list(mongo.db.tips.find())
-    return render_template("tips.html", tips=tips)
+    categories = list(mongo.db.categories.find())
+    return render_template("tips.html", tips=tips, categories=categories)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -91,8 +92,10 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     tips = list(mongo.db.tips.find({"username": session["user"]}))
+    categories = list(mongo.db.categories.find())
     if session["user"]:
-        return render_template("profile.html", username=username, tips=tips)
+        return render_template("profile.html", username=username, tips=tips,
+            categories=categories)
 
     return redirect(url_for("login"))
 
