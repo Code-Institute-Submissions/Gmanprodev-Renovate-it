@@ -168,19 +168,21 @@ nav .brand-logo {
 }
 
 .back-to-top {
-    background-color: #f7e7ce;
+    background-color: #f7e7ce !important;
     color: teal;
 }
 
 .back-to-top:hover {
-    background-color: #f7e7ce !important;
+    background-color: whitesmoke !important;
     color: teal;
 }
 
 .back-to-top:active {
-    background-color: #f7e7ce !important;
+    background-color: whitesmoke !important;
     color: teal;
 }
+
+@media (min-width: )
 
 .search-width {
     width: 50% !important;

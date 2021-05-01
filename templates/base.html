@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicons/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicons/favicon-32x32.png') }}">
@@ -82,13 +83,17 @@
         <div class="container">
             <div class="row">
                 <div class="col s6 left-align">
-                    <a href="{{ url_for('index') }}" class="footer-text">Renovate.it</a> 
+                    {% if session.user %}
+                        <a href="{{ url_for('profile', username=session['user']) }}" class="brand-logo">Renovate.it</a>
+                    {% else %}
+                        <a href="{{ url_for('index') }}" class="footer-text">Renovate.it</a>
+                    {% endif %}
                 </div>
                 <div class="col s6 right-align">
                     <div class="social-links">
-                        <a class="white-text" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a class="white-text" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a class="white-text" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>  
+                        <a class="white-text hvr-wobble-skew" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a class="white-text hvr-wobble-skew" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a class="white-text hvr-wobble-skew" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>  
                     </div>
                 </div>
             </div>
