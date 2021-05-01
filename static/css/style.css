@@ -194,3 +194,7 @@ nav .brand-logo {
         margin-right: 5% !important;
     }
 }
+
+.main {
+    overflow: hidden;
+}
