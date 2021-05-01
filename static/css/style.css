@@ -182,8 +182,6 @@ nav .brand-logo {
     color: teal;
 }
 
-@media (min-width: )
-
 .search-width {
     width: 50% !important;
     margin-left: 25% !important;
@@ -197,6 +195,12 @@ nav .brand-logo {
     }
 }
 
-.main {
+.overflow {
     overflow: hidden;
+}
+
+@media (max-width: 330px) {
+    .responsive {
+        font-size: 10px !important;
+    }
 }

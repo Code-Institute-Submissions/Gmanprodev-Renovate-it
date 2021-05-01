@@ -9,25 +9,25 @@
                     <div class="input-field">
                         <i class="fas fa-folder-open prefix teal-text"></i>
                         <select id="category_name" name="category_name" class="validate" required>
-                            <option value="" disabled selected>Select Your Tip Category</option>
+                            <option value="" disabled selected></option>
                             {% for category in categories %}
                                 <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                             {% endfor %}
                         </select>
-                        <label for="category_name">Dropdown</label>
+                        <label for="category_name" class="responsive">Select Your Tip Category</label>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-map-marker-alt prefix teal-text"></i>
                             <input id="location" name="location" minlength="3" maxlength="20" type="text" class="validate" required>
-                            <label for="location">Type Your Location Here</label>
+                            <label for="location" class="responsive">Type Your Location Here</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="fas fa-comments prefix teal-text"></i>
                             <textarea id="tip" name="tip" minlength="5" maxlength="500" class="materialize-textarea validate" required></textarea>
-                            <label for="tip">Type Your Renovation Tip Here</label>
+                            <label for="tip" class="responsive">Type Your Renovation Tip Here</label>
                         </div>
                     </div>
                     <div class="row">
