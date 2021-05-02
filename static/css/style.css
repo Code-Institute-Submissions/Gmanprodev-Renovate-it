@@ -111,8 +111,7 @@ nav .brand-logo {
 }
 
 .footer {
-    position: sticky;
-    height: 10vh;
+    height: 80px;
 }
 
 .icon-color {
@@ -153,7 +152,7 @@ nav .brand-logo {
 }
 
 .height {
-    min-height: calc(100vh - 170px);
+    min-height: calc(100vh - 70px);
 }
 
 .text-clamp {
