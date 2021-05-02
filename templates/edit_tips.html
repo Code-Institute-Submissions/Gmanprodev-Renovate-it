@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!-- page header -->
     <h3 class="hero-text text-shadow center-align">Edit Tips</h3>
 
+        <!-- edit tips form -->
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_tips', tips_id=tips._id) }}">
                 <div class="card-panel">
@@ -44,7 +46,5 @@
                 </div>
             </form>
         </div>
-    
-    
 
 {% endblock %}

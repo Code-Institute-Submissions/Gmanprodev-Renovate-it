@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!-- page header -->
     <h3 class="hero-text text-shadow center-align">{{ username }}'s Profile</h3>  
     <br>
+
+    <!-- card panel for each individual tip -->
     <div class="row"> 
         {% for tip in tips %}
             <div class="col s12 m4 l3">
                 <div class="card">
+                    <!-- specific image shown on card for each category name -->
                     {% for category in categories %}
                         {% if category.category_name == tip.category_name %}
                             <div class="card-image waves-effect waves-block waves-light">
@@ -14,12 +18,14 @@
                             </div>
                         {% endif %}
                     {% endfor %}
+                    <!-- text information displayed on card -->
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><strong>{{ tip.category_name }}</strong></span>
                         <p><i class="fas fa-user prefix"></i><strong> Username:</strong> {{ tip.username }}</p>
                         <p><i class="fas fa-map-marker-alt prefix"></i><strong> Location:</strong> {{ tip.location }}</p>
                         <p class="text-clamp"><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
                         <br>
+                        <!-- shows additional text -->
                         <button class="activator btn-small">Read More</button>
                     </div>
                     <div class="card-reveal">
@@ -28,33 +34,44 @@
                         <p><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
                     </div>
                     <div class="card-action">
+                        <!-- edit button -->
                         <a href="{{ url_for('edit_tips', tips_id=tip._id) }}" class="btn-small waves-effect waves-light">Edit</a>
+                        <!-- delete button -->
                         <button data-target="modal1" class="btn-small red waves-effect waves-light modal-trigger">Delete</button>
+                        <!-- modal as secondary authorisation to delete -->
                         <div id="modal1" class="modal">
                             <div class="modal-content">
                               <h4>DELETE</h4>
                               <p>Are You Sure You Want To Delete Your Tip?</p>
                             </div>
                             <div class="modal-footer">
+                                <!-- confirmation to delete button -->
                                 <a href="{{ url_for('delete_tips', tips_id=tip._id) }}" class=" btn-small red modal-close waves-effect waves-light">YES</a>
+                                <!-- cancel delete button -->
                                 <button data-target="modal1" class="btn-small waves-effect waves-light modal-close">NO</button>
                             </div>
                         </div>
                     </div>
                  </div>
             </div>
+
+            <!-- display if the user hasn't added any tips  -->
             {% else %}
                 <h4 class="hero-text-1 center-align">You Haven't Added Any Tips Yet</h4>
                 <br>
                 <div class="center-align">
+                    <!-- add tips button -->
                     <a href="{{ url_for('add_tips') }}" class="waves-effect waves-light btn text-shadow">Add Tips</a>
                 </div>
                 <br>
         {% endfor %}   
     </div>
     <br>
+
+    <!-- back to top button -->
     <div class="center-align">
         <button id="backToTop" title="Back to top" class="btn back-to-top">Back To Top</button>
     </div>
     <br>
+    
 {% endblock %}

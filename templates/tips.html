@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
+
     <div class="overflow">
+
+        <!-- page header -->
         <h3 class="hero-text text-shadow center-align">Top Tips</h3>
 
+            <!-- search function -->
             <form action="{{ url_for('search') }}" method="POST" class="col s12">
                 <div class="row center-align">
                     <div class="input-field col s12 search-width">
@@ -20,43 +24,51 @@
             </form>
             <br>
     
+            <!-- display all tips -->
             {% if tips|length > 0 %}
                 <div class="row">
-                {% for tip in tips %}
-                    <div class="col s12 m4 l3">
-                        <div class="card">
-                            {% for category in categories %}
-                                {% if category.category_name == tip.category_name %}
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" height="300" src="{{ category.category_image }}">
-                                    </div>
-                                {% endif %}
-                            {% endfor %}
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4"><strong>{{ tip.  category_name }}</strong></span>
-                                <p><i class="fas fa-user prefix"></i><strong> Username:</strong> {{ tip.username }}</p>
-                                <p><i class="fas fa-map-marker-alt prefix"></i><strong> Location:</strong> {{ tip.location }}</p>
-                                <p class="text-clamp"><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
-                                <br>
-                                <button class="activator btn-small">Read More</button>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4"><strong>{{ tip.category_name }}</strong><i class="fas fa-times right"></i></span>
-                                <br>
-                                <p><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
+                    {% for tip in tips %}
+                        <div class="col s12 m4 l3">
+                            <!-- card panel for each individual tip -->
+                            <div class="card">
+                                <!-- specific image shown on card for each category name -->
+                                {% for category in categories %}
+                                    {% if category.category_name == tip.category_name %}
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" height="300" src="{{ category.category_image }}">
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                                <!-- text information displayed on card -->
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"><strong>{{ tip.  category_name }}</strong></span>
+                                    <p><i class="fas fa-user prefix"></i><strong> Username:</strong> {{ tip.username }}</p>
+                                    <p><i class="fas fa-map-marker-alt prefix"></i><strong> Location:</strong> {{ tip.location }}</p>
+                                    <p class="text-clamp"><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
+                                    <br>
+                                    <!-- shows additional text -->
+                                    <button class="activator btn-small">Read More</button>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"><strong>{{ tip.category_name }}</strong><i class="fas fa-times right"></i></span>
+                                    <br>
+                                    <p><i class="fas fa-comments prefix"></i><strong> Top Tip:</strong> {{ tip.tip }}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-            {% endfor %}
+                    {% endfor %}
                 </div>
+            <!-- displayed if no search results are found -->
             {% else %}
                 <h3 class="hero-text-1 center-align">No Results Found</h3>
             {% endif %}
             <br>
-            <div class="center-align">
-                <button id="backToTop" title="Back to top" class="btn back-to-top">Back To Top</button>
-            </div>
-            <br>
+
+         <!-- back to top button -->
+        <div class="center-align">
+            <button id="backToTop" title="Back to top" class="btn back-to-top">Back To Top</button>
         </div>
+        <br>
+    </div>
 
 {% endblock %}

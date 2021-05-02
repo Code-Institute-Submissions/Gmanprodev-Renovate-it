@@ -1,59 +1,66 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="parallax-container">
-    <div class="parallax"><img src="static/images/parallax1.jpg"></div>
-    <div>
-        <h1 class="center-align hero-text text-shadow">Sign Up Now To Share Renovation Tips With Our Global Community</h1>
-    </div>
-    <div class="center-align">
-        <a href="{{ url_for('signup') }}" class="waves-effect waves-light btn-large text-shadow">Sign Up</a>
-    </div>
-    <div class="center-align">
-        <p class="hero-text-1">Already Have An Account?</p>
-        <a href="{{ url_for('login') }}" class="waves-effect waves-light btn-small text-shadow">Log In Here</a>
-    </div>
-</div>
-<div class="section white section-pad">
-    <div class="row container">
-        <div class="row">
-            <div class="col s12 m6 l3 center-align">
-                <i class="fas fa-user-cog fa-8x icon-color text-shadow"></i>
-                <br>
-                <p class="icon-text center-align">Sign up and create an account</p>
-                <br>
-            </div>
-            <div class="col s12 m6 l3 center-align">
-                <i class="fas fa-users fa-8x icon-color text-shadow"></i>
-                <br>
-                <p class="icon-text center-align">Become part of the online community</p>
-                <br>
-            </div>
-            <div class="col s12 m6 l3 center-align">
-                <i class="fas fa-lightbulb fa-8x icon-color text-shadow"></i>
-                <br>
-                <p class="icon-text center-align">Share your renovation tips and experiences</p>
-                <br>
-            </div>
-            <div class="col s12 m6 l3 center-align">
-                <i class="fas fa-tasks fa-8x icon-color text-shadow"></i>
-                <br>
-                <p class="icon-text center-align">Create your own renovation checklist</p>
-            </div>
+    <!-- parallax image and text -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="static/images/parallax1.jpg"></div>
+        <div>
+            <h1 class="center-align hero-text text-shadow">Sign Up Now To Share Renovation Tips With Our Global Community</h1>
+        </div>
+        <div class="center-align">
+            <!-- sign up button -->
+            <a href="{{ url_for('signup') }}" class="waves-effect waves-light btn-large text-shadow">Sign Up</a>
+        </div>
+        <div class="center-align">
+            <p class="hero-text-1">Already Have An Account?</p>
+            <!-- login button -->
+            <a href="{{ url_for('login') }}" class="waves-effect waves-light btn-small text-shadow">Log In Here</a>
         </div>
     </div>
-</div>
-<div class="parallax-container">
-    <div class="parallax"><img src="static/images/parallax2.jpg"></div>
-    <div class="row container">
-        <div class="row">
-            <div class="col s12 center-align">
-                <p class="hero-text-2 text-padding text-shadow">Check out the community top tips board</p>
-                <a href="{{ url_for('get_tips') }}" class="waves-effect waves-light btn-large text-shadow">Top Tips</a>
-            </div>
-        </div>
-    </div>
-</div>
 
+    <!-- icons and service description -->
+    <div class="section white section-pad">
+        <div class="row container">
+            <div class="row">
+                <div class="col s12 m6 l3 center-align">
+                    <i class="fas fa-user-cog fa-8x icon-color text-shadow"></i>
+                    <br>
+                    <p class="icon-text center-align">Sign up and create an account</p>
+                    <br>
+                </div>
+                <div class="col s12 m6 l3 center-align">
+                    <i class="fas fa-users fa-8x icon-color text-shadow"></i>
+                    <br>
+                    <p class="icon-text center-align">Become part of the online community</p>
+                    <br>
+                </div>
+                <div class="col s12 m6 l3 center-align">
+                    <i class="fas fa-lightbulb fa-8x icon-color text-shadow"></i>
+                    <br>
+                    <p class="icon-text center-align">Share your renovation tips and experiences</p>
+                    <br>
+                </div>
+                <div class="col s12 m6 l3 center-align">
+                    <i class="fas fa-tasks fa-8x icon-color text-shadow"></i>
+                    <br>
+                    <p class="icon-text center-align">Create your own renovation checklist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- parallax image and text -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="static/images/parallax2.jpg"></div>
+        <div class="row container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <p class="hero-text-2 text-padding text-shadow">Check out the community top tips board</p>
+                    <!-- top tips button -->
+                    <a href="{{ url_for('get_tips') }}" class="waves-effect waves-light btn-large text-shadow">Top Tips</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" type="text/css"/>
+
+    <!-- materialize library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+
+    <!-- hover css animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+
+    <!-- css stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicons/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicons/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='favicons/site.webmanifest') }}">
+
     {% block styles %}
     {% endblock %}
+
     <title>Renovate.it</title>
 </head>
 <body>
 
     <header>
+
+        <!-- navbar -->
         <div class="navbar-fixed">
             <nav class="nav-extended text-shadow teal lighten-2">
                 <div class="nav-wrapper">
@@ -45,6 +59,7 @@
             </nav>
         </div>
 
+            <!-- mobile sidenav -->
             <ul class="sidenav teal lighten-2" id="mobile-demo">
                 <li><h4 class="center-align white-text text-darken-4 sidenav-header">Renovate.it</h4></li>
                     {% if session.user %}
@@ -61,6 +76,7 @@
             </ul>
     </header>
 
+    <!-- flash messages -->
     <section>
         {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -73,12 +89,13 @@
         {% endwith %}
     </section>
 
+    <!-- main content -->
     <main class="height">
         {% block content %}
         {% endblock %}
     </main>
 
-    
+    <!-- footer -->
     <footer class="text-shadow teal lighten-2 footer page-footer">
         <div class="container">
             <div class="row">
@@ -100,10 +117,17 @@
         </div>
     </footer>
 
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- materialize library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- javascript file -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
     {% block scripts %}
     {% endblock %}
+    
 </body>
 </html>
