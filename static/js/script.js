@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.parallax').parallax();
     $('select').formSelect();
     $('.modal').modal();
+    $('.tooltipped').tooltip();
 
         // Operates the Select Category dropdown on the Add Tips form.
         validateMaterializeSelect();

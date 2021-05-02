@@ -12,7 +12,8 @@
                     <div class="input-field col s12">
                         <i class="fas fa-user-plus prefix teal-text"></i>
                         <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                        <label for="username" class="responsive">Username (don't use email address)</label>
+                        <label for="username">Username</label>
+                        <a class="tooltipped helper" data-position="right" data-tooltip="Must be between 5 and 15 characters, only letters and digits">*requirements</a>
                     </div>
                 </div>
                 <div class="row">
@@ -20,6 +21,7 @@
                         <i class="fas fa-user-lock prefix teal-text"></i>
                         <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9\W+]{5,15}$" class="validate" required>
                         <label for="password">Password</label>
+                        <a class="tooltipped helper" data-position="right" data-tooltip="Must be between 5 and 15 characters, can include letters, digits and special characters">*requirements</a>
                     </div>
                 </div>
                 <div class="row">
