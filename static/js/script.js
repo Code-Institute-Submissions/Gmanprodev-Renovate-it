@@ -1,10 +1,11 @@
+// Materialize functions.
 $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
     $('.parallax').parallax();
     $('select').formSelect();
-    $('.tooltipped').tooltip();
     $('.modal').modal();
 
+        // Operates the Select Category dropdown on the Add Tips form.
         validateMaterializeSelect();
         function validateMaterializeSelect() {
             let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
@@ -32,6 +33,7 @@ $(document).ready(function(){
             }
         });
 
+        // Operates the Back To The Top button.
         $("#backToTop").click(function() {
             $("html, body").animate({scrollTop: 0}, 1000);
          });
