@@ -2,7 +2,7 @@
 
 [back to README.md file](https://github.com/Gmanprodev/Renovate-it/blob/master/README.md)
 
-### User Category: Renovate.it business
+### User Category: Renovate-it business
 * A. As a business, I want my web app to display industrial textured colours.
    * Complexity – 1
    * Value - 5

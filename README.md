@@ -6,7 +6,7 @@ A live demo can be found [here](https://renovate-it.herokuapp.com/)
 
 ## Introduction
 
-Renovate.it is a public information sharing web app which allows users to share their tips and experiences on renovation based topics. The main purpose of this web app is to give the general public access to a platform where they can search for advice before embarking on their own renovation project and to share their knowledge with others.
+Renovate-it is a public information sharing web app which allows users to share their tips and experiences on renovation based topics. The main purpose of this web app is to give the general public access to a platform where they can search for advice before embarking on their own renovation project and to share their knowledge with others.
 
 The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](https://renovate-it.herokuapp.com/) to view.
 
@@ -51,7 +51,7 @@ The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](ht
 
 ### Goals
 
-#### Renovate.it goals
+#### Renovate-it goals
 
 The goal of this web app is to give the general public a platform to share their advice with others and also gain insights into other peoples experiences before embarking on their own renovation project.
 
@@ -86,7 +86,7 @@ Both business and customer goals are addressed through user stories.
 
 ### User Stories
 
-#### Renovate.it business
+#### Renovate-it business
 
 * As a business, I want my web app to display industrial textured colours.
 * As a business, I want my web app to display simple to follow instructions.
