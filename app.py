@@ -1,6 +1,6 @@
 import os
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -20,11 +20,13 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+# --INDEX--
 @app.route("/index")
 def index():
     return render_template("index.html")
 
 
+# --ALL TIPS AND TIP CATEGORIES--
 @app.route("/get_tips")
 def get_tips():
     tips = list(mongo.db.tips.find())
@@ -32,6 +34,7 @@ def get_tips():
     return render_template("tips.html", tips=tips, categories=categories)
 
 
+# --SEARCH FUNCTION--
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -40,6 +43,7 @@ def search():
     return render_template("tips.html", tips=tips, categories=categories)
 
 
+# --SIGN UP--
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
@@ -63,6 +67,7 @@ def signup():
     return render_template("signup.html")
 
 
+# --LOG IN--
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -87,6 +92,7 @@ def login():
     return render_template("login.html")
 
 
+# --USERS PROFILE--
 @app.route("/profile/<username>")
 def profile(username):
     username = mongo.db.users.find_one(
@@ -100,6 +106,7 @@ def profile(username):
         return redirect(url_for("login"))
 
 
+# --LOG OUT--
 @app.route("/logout")
 def logout():
     flash("You are logged out")
@@ -107,6 +114,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# --ADDING TIPS--
 @app.route("/add_tips", methods=["GET", "POST"])
 def add_tips():
     if request.method == "POST":
@@ -124,6 +132,7 @@ def add_tips():
     return render_template("add_tips.html", categories=categories)
 
 
+# --EDITING TIPS--
 @app.route("/edit_tips/<tips_id>", methods=["GET", "POST"])
 def edit_tips(tips_id):
     if request.method == "POST":
@@ -142,6 +151,7 @@ def edit_tips(tips_id):
     return render_template("edit_tips.html", tips=tip, categories=categories)
 
 
+# --DELETING TIPS--
 @app.route("/delete_tips/<tips_id>")
 def delete_tips(tips_id):
     mongo.db.tips.remove({"_id": ObjectId(tips_id)})
@@ -149,16 +159,19 @@ def delete_tips(tips_id):
     return redirect(url_for("profile", username=session["user"]))
 
 
-@app.errorhandler(404)  # 404 ERROR
+# --404 ERROR--
+@app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
 
 
-@app.errorhandler(500)  # 500 ERROR
+# --500 ERROR--
+@app.errorhandler(500)
 def something_went_wrong(error):
     return render_template('500.html'), 500
 
 
+# --RUNNING THE APP--
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
