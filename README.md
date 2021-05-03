@@ -2,7 +2,7 @@
 
 A live demo can be found [here](https://renovate-it.herokuapp.com/)
 
-![Desktop Demo](documentation/testing/test-images/serenappy_responsive_image.jpg)
+![Desktop Demo](documentation/testing/test_images/renovate-it_responsive_image.png)
 
 ## Introduction
 
