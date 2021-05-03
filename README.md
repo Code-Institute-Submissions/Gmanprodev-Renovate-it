@@ -1,4 +1,4 @@
-# Renovate.it - A renovation advice sharing web app.
+# Renovate.it - a renovation advice sharing web app.
 
 A live demo can be found [here](https://renovate-it.herokuapp.com/)
 
