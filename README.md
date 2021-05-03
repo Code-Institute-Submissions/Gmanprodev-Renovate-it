@@ -6,30 +6,9 @@ A live demo can be found [here](https://renovate-it.herokuapp.com/)
 
 ## Introduction
 
-SerenAppy is a meditation web app which has been built for a local community Health & Wellbeing centre. It will be used during meditation sessions in conjunction with yoga classes.
+Renovate.it is a public information sharing web app which allows users to share their tips and experiences on renovation based topics. The main purpose of this web app is to give the general public access to a platform where they can search for advice before embarking on their own renovation project and to share their knowledge with others.
 
-It presents a landing page with options for how long the user wishes to meditate for (time) and what visual and audio experience the user prefers (season). The user can select from the following options:
-### Time
-* 2 minutes
-* 5 minutes
-* 10 minutes
-* 20 minutes 
-* 30 minutes
-* 60 minutes
-
-### Season
-* Spring
-* Summer
-* Autumn
-* Winter
-
-The time selection sets how long the video and audio will last before it stops and the season selection will set the video and audio that the user would associate with the season chosen.
-
-If only one selection is made the user will see an alert box prompting them to choose a time and season option.
-
-The main purpose of the web app is to allow public funded health & well being initiatives and bodies to access an easy to use meditation tool for people from all walks of life.
-
-The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](https://gmanprodev.github.io/SerenAppy-Web-App/) to view.
+The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](https://renovate-it.herokuapp.com/) to view.
 
 
 ## Table of Content
@@ -72,54 +51,56 @@ The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](ht
 
 ### Goals
 
-#### SerenAppy goals
+#### Renovate.it goals
 
-The goal of this web app is to allow public funded health & well being initiatives and bodies to access an easy to use mediataion tool for people from all walks of life.
+The goal of this web app is to give the general public a platform to share their advice with others and also gain insights into other peoples experiences before embarking on their own renovation project.
 
 **Target audience is:**
 
-* People who are passionate about mental and physical wellbeing.
-* Publically funded organisations who promote mental and physical health.
-* People who are struggling with any kind of anxiety.
-* Participants of yoga and general mindfulness excerise classes. 
+* People who are considering starting a renovation project.
+* People who are currently engaged in a renovation project.
+* People who have any renovation advice or experiences to share. 
 * Any age group.
  
 
 #### Business goals
 
-* To have as many of the attendees of the Health and Well-being centre, as possible, take up usage of the web app.
 * Interactive web-app.
 * Fully functional web app.
 * Intuitive design.
 * Easy to navigate.
+* To have as many registered users as possible.
+* Daily increases in user numbers.
+* Daily increases in tips being added.
 
 
 #### Customer goals
 
-* Meditation
-* Reducing stress and anxiety.
-* Helpful tool during exercise and mental health classes.
+* Easy to navigate.
+* Easy to search for specific keywords.
+* To easily locate information.
+* Easy to add and edit information.
 
 Both business and customer goals are addressed through user stories.
 
 
 ### User Stories
 
-#### Local Health and Well-being Centre
+#### Renovate.it business
 
-* As a Well-being centre, I want my web app to display calm natural colours.
-* As a Well-being centre, I want my web app to display simple to follow instructions.
-* As a Well-being centre, I want my web app to be responsive on all devices.
-* As a Well-being centre, I want a strong focus on mobile usability as most users will be veiwing the web app on mobile devices.
-* As a Well-being centre, I want my web app to be interactive and offer real time feedback.
-* As a Well-being centre, I want to be able to receive feedback and messages from users.
-* As a Well-being centre, I want my web app to load quickly.
-* As a Well-being centre, I want my web app to use as little of the users data as possible.
-* As a Well-being centre, I want my web app to allow users to engage with us through different social media routes.
-* As a Well-being centre, I want my web app to display easy to use audio and timer function controls.
-* As a Well-being centre, I want my web app to display clear high resolution images.
-* As a Well-being centre, I want my web app to be usable for both left and right handed users.
-* As a Well-being centre, I want my web app to have a low risk of accidently clicking more than one button at once on smaller screens sizes.
+* As a business, I want my web app to display industrial textured colours.
+* As a business, I want my web app to display simple to follow instructions.
+* As a business, I want my web app to be responsive on all devices.
+* As a business, I want a strong focus on mobile usability as most users will be veiwing the web app on mobile devices.
+* As a business, I want my web app to be interactive and offer real time feedback.
+* As a business, I want my web app to load quickly.
+* As a business, I want my web app to use as little of the users data as possible.
+* As a business, I want my web app to allow users to engage with us through different social media routes.
+* As a business, I want my web app to display clear high resolution images.
+* As a business, I want my web app to be usable for both left and right handed users.
+* As a business, I want my web app to have a low risk of accidently clicking more than one button at once on smaller screens sizes.
+* As a business, I want my web app to have a search function.
+* As a business, I want my web app to have images that are easily recognisable and associated with renovation categories.
 
 #### The potential customer
 
@@ -127,17 +108,16 @@ Both business and customer goals are addressed through user stories.
 * As a customer, I want to know when I take the wrong action or something doesn't work.
 * As a customer, I want the web app to be interactive with real time feedback.
 * As a customer, I want the the web app to be easy to use and navigate, particularly on mobile devices.
-* As a customer, I want to be able to easily get back to the main page, pause or rest the audio and timer if I'm distracted.
-* As a customer, I want to be able to contact the well-being centre via email and social media platforms.
-* As a customer, I want to be able to listen to my own choice of audio.
-* As a customer, I want the web app to be available in different languages.
-* As a customer, I want the web app to have built in volume controls.
+* As a customer, I want to easily search for keywords relating to top tips.
+* As a customer, I want to easily sign up for an account.
+* As a customer, I want to know be able to view the tips I have added.
+* As a customer, I want to be able to save the tips I'm interested in to view at a later date.
+* As a customer, I want to be able to easily edit or delete tips I have added.
 
 #### The UX designer
 
 * As a UX designer, I want to track the user behaviour so that I can improve the user experience.
     * As a UX designer, I want to track the user behaviour so that I can identify the possible user confusion over navigating the web app.
-    * As a UX designer, I want to find which Time and Season selection buttons are used the least by users so that the options can be updated if needed.
 * As a UX designer, I want to focus on the mobile design as most users will be using the web app on a mobile device.
 * As a UX designer, I want the web app to be intercative and give real time feedback when a user executes an action.
   
