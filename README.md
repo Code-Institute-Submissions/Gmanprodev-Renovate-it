@@ -1,6 +1,6 @@
-# SerenAppy - A Meditation Web App 
+# Renovate.it - A renovation advice sharing web app.
 
-A live demo can be found [here](https://gmanprodev.github.io/SerenAppy-Web-App/)
+A live demo can be found [here](https://renovate-it.herokuapp.com/)
 
 ![Desktop Demo](documentation/testing/test-images/serenappy_responsive_image.jpg)
 
