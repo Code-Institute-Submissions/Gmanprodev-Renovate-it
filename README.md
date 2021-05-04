@@ -262,6 +262,7 @@ If you are unable to access the mockup links above please see the mockup images 
 ### Features left to implement
 
 * **Admin Account** - To allow an admin user to access all of the databse information for editing and deleting purposes.
+* **Change Password** - To allow users to change their password.
 * **Save Tips** - To enable users to save tips to a project list when logged in so that they can access particular tips rather than searching for them again.
 * **Tracking User Behaviour** - Use an analytics tool such as [Hotjar](https://www.hotjar.com/) to view user behaviour.
 * **Most and Least Visited Pages on the Site** - Use an analytics tool such as [Hotjar](https://www.hotjar.com/) to understand where the traffic is going on the site.
