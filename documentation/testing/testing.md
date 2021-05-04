@@ -185,18 +185,17 @@
 
 ### Lighthouse Audit
 
-   * Click [here](test-images/lighthouse_report.pdf) for the report.
+   * Click [here](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/lighthouse_report.png?raw=true) for the report.
    * No reccommendations in this report have been implemented in the first release but will be looked at in future releases.
 
 #### Conclusion
 
-   * The code validators highlighted these errors which have been fixed for the first release:
-      * Using "labelledby" rather than "aria-label".
-      * Missing / in a </script> tag.
-      * Missing 4 semicolons in my javascript code.
+   * The code validators highlighted these errors which I do not feel is neccessary to fix now as I believe they are due to the Jinja templating:
+      * Using page headers.
+      * Input field selections.
       * Showing that I have one unused variable (hideFunction), however I am actually using.
-   * The web app works correctly in all five major browsers.
-   * The suggestions given in the Lighthouse report will be implemented in the second release.
+   * The web app works correctly in all five major browsers. I have tested on various devices and five different browsers.
+   * The Lighthouse report scores are all really high apart from the performance. Thsi is due to the image hosting which I will rectify in the second release.
 
 
 
@@ -204,40 +203,28 @@
 
 ### My Mentor
 
-Seun was very impressed with the web app and all of the documentation to go along with it. She said that she had been using the web app before bed to get into a calm state of mind and her favourite season option was Winter. She liked the fact that this had a real world application.
+Akshat was very impressed with the web app and all of the documentation to go along with it. He liked the flow of the app how easy it was to navigate, he also mentioned that he could see the general public using the app in real life situations.
 
 #### Suggested Improvements
 
-* Have the selection buttons move into one column on smaller screen sizes - implemented.
-* Reduce the amount of empty space on larger screen sizes - haven't implemented as I was not in agreement.
-* Reduce the size of the header (navbar) on smaller screen heights (laptops) so that more content can fit on the page - this will be implemented in future releases as the majority of users will be viewing the web app on a mobile device.
-* On big screen sizes the background image on the meditation pages becomes larger than the screen and some of the image is cut off. However this isn't very noticable and the images remain defined and clear - this will be implemented in future releases as the majority of users will be viewing the web app on a mobile device.
-* Using emailjs to also send an email to the user to confirm their email has been received - this will be implemented in future releases as the user alreday gets a pop up informing them that the email has successfully been sent - this will be implemented in future releases.
-* When the SWAL alert appears after submitting the contact form, the contact form should automatically close down - I implemented this after all of the documented testing above and the contact form modal now closes automatically after the fields have been validated and the submit button is clicked.
-* The contact form modal is currently accessed via the @ icon in the footer, to complement this have a "contact us" button in the navbar which links to the same modal - this will be implemented in future releases.
+* Remove text shadow from headers - implemented.
+* Compress the size of the images and host them on a more up to date platform - will do on second release.
 
 ### Peer-Code-Review
 
-The feedback was that this is an application that could be used in the real world right now. Everyone enjoyed using the web app due to the way it interacted with the user and the way it was always giving feedback on users actions. 
+The feedback was all very positive and everyone like the look and feel of the app.
 
 #### Suggested Improvements:
 
-   * Although the sound quality is pretty good the length of the audio files mean that there are too many stop and start points whilst the audio is playing. This leads to a disturbance for the user during their meditation sessions. These audio files will be updated in future releases.
-   * Footer Social Media links all go to the generic login pages and not the company pages - I've left this for a later release as SerenAppy doesn't have a Social Media footprint.
-   * Increase colour contrast due to possible accessability issues - Will look to make changes in the future releases.
-   * Have the selection buttons move into one column on smaller screen sizes - implemented.
+   * To have username and password requirements on the sign up form - I implemented this on the first release.
 
 
 ### User Review
 
-The web app was tested by Code Institute students and mentors, friends and family. The majority of testing carried on real devices were on Iphone and Samsung mobiles. The feedback was really positive, most people commenting on how they would continue to use the web app for everday use.
+The web app was tested by Code Institute students and mentors, friends and family. The majority of testing carried on real devices were on Iphone and Samsung mobiles. The feedback was really positive, most people commenting on how they would continue to use the web app moving forward.
 
-
-#### Suggested Improvements:
-
-   * Although the sound quality is pretty good the length of the audio files mean that there are too many stop and start points whilst the audio is playing. This leads to a disturbance for the user during their meditation sessions. These audio files will be updated in future releases.
 
 #### Conclusion
 
-   * I am aware that I need to replace the audio files with audio that constantly flows rather than stoping and starting, so users can experience a distraction free meditation session when using the web app.
+   * I am aware that I need to implement a greater line of security on the login details.
    * I will use an analytics platform on the next release, such as [Hotjar](https://www.hotjar.com/), to collect feedback form a larger range of users and use that data to implement changes related to the way users navigate the site.
