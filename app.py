@@ -100,8 +100,9 @@ def profile(username):
     tips = list(mongo.db.tips.find({"username": session["user"]}))
     categories = list(mongo.db.categories.find())
     if session["user"]:
-        return render_template("profile.html", username=username, tips=tips,
-            categories=categories)
+        return render_template(
+                            "profile.html", username=username,
+                            tips=tips, categories=categories)
     else:
         return redirect(url_for("login"))
 
@@ -162,13 +163,13 @@ def delete_tips(tips_id):
 # --404 ERROR--
 @app.errorhandler(404)
 def page_not_found(error):
-    return render_template('404.html'), 404
+    return render_template('404.html'),
 
 
 # --500 ERROR--
 @app.errorhandler(500)
 def something_went_wrong(error):
-    return render_template('500.html'), 500
+    return render_template('500.html'),
 
 
 # --RUNNING THE APP--
