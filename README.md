@@ -159,28 +159,24 @@ Following colours have been used:
 * ![#9e9e9e](https://place-hold.it/20/9e9e9e/000000?text=+) #9e9e9e (Nobel) 
 * ![#fff](https://place-hold.it/20/fff/000000?text=+) #fff (White) 
 
-
-
-
-The stand out colour for this web page is Cadet Blue, which according to [Color Psychology](https://www.colorpsychology.org/teal/) is associated with the ocean and nature. This concept is very relevant for a web app associated with meditation and seeking to create a relaxed state of mind.
-
-Other than Cadet Blue, I used Peru for all of the buttons which have a Tawny border and when hovered on the button colour changes to Tan and the text changes to Saddle Brown. For the header and footer text I have used Tawny. For the Time and Season titles, all of the button text and the form text boxes I have used the colour Clear Day. When you hover on the media icons and the text links in the footer they change to Cadet Blue. Both the header and footer have a colour gradient applied which blends the colours Cadet Blue and Clear Day. All modals have Peru as their background colour, Clear Day for all text, boxes and Cadet Blue for buttons and the button `hover` and clicked changes the colour to Raven. The countdown timer on each meditation page is represented with numbers using the colour Saddle Brown. I have two sweet alert pop ups to confirm the users actions, these pop ups have their own default colours.
+I used the Materialize Teal colour across every page, including the navbar, footer, majority of the text and buttons. The homepage icons and the all of the forms use the color Gin Fizz. The color white is used for the navbar and footer content and flash messages. The delete buttons, both on the profile page and the confirmation modal, are red to emphasise the warning. Turquoise is used for the icon text on the homepage and Nobel (grey) is used for the form text. The colour black is used for a small amount of text on the tips cards and the forms.
 
 #### Font
 
-The Fonts I used for this project are **Pacifico** and **Sans Serif** with the font weights: 
-* 400 - for all button text and subtext.
-* 500 - for headers and titles.
+The Fonts I used for this project are **Yellowtail** and **Montserrat** with the font weights: 
+* 300
+* 400
+* 500
 
-The [Pacifico](https://fonts.google.com/specimen/Pacifico) font was chosen for its soft calming design.
+The [Yellowtail](https://fonts.google.com/specimen/Yellowtail?query=yellow) font was chosen for it's brush stroke appearance to link in with the renovation theme.
 
 ### Wireframes
 
 I decided that it would be more helpful to have mockups than simple wireframes. The mockups were built in [figma](https://www.figma.com/). 
 
-Link to the mockups can be found [here](https://www.figma.com/file/ld7rwps08gZCxYCipi7M3o/SerenAppy?node-id=0%3A1). The mockups were designed for the mobile first approach. I have produced a desktop and mobile mockup of the landing page. For the meditation pages I have only produced mobile mockups as the layout will remain the same on all screen sizes.
+Link to the mockups can be found [here](https://www.figma.com/file/fkOYNcpb1G4whUHj7TskjS/Renovate.IT?node-id=0%3A1). The mockups were designed for the mobile first approach. I have produced a desktop, tablet and mobile mockup of the main pages.
 
-If you are unable to access the mockup links above please see the mockup images [here](https://github.com/Gmanprodev/SerenAppy-Web-App/tree/master/documentation/wireframes).
+If you are unable to access the mockup links above please see the mockup images [here](https://github.com/Gmanprodev/Renovate-it/tree/master/documentation/wireframes).
 
 ## Features
 
