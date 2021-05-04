@@ -259,6 +259,11 @@ If you are unable to access the mockup links above please see the mockup images 
 * **Logout**
     * Upon clicking the Logout link in the navbar the user is redirected to the Login page with a flash message "you are logged out".
 
+### MongoDB
+
+* **Data Schema**
+Click [here]()
+
 ### Features left to implement
 
 * **Admin Account** - To allow an admin user to access all of the databse information for editing and deleting purposes.
