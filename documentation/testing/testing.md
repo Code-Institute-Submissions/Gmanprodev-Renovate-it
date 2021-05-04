@@ -109,17 +109,30 @@
    * Verify that the Back To Top button works.
    * Verify that the Profile page is responsive.
 
-   ![User Tips Displayed]()
+   ![User Tips Displayed](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile_page.gif?raw=true)
 
-   ![Read More Button]()
+   ![Read More Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile_readmore_button.gif?raw=true)
 
-   ![Edit Button]()
+   ![Edit Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile_edit_button.gif?raw=true)
 
-   ![Delete Button]()
+   ![Delete Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile_delete_button.gif?raw=true)
 
-   ![Back To Top Button]()
+   ![Back To Top Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile_backtotop_button.gif?raw=true)
 
-   ![Responsive Profile Page]()
+   ![Responsive Profile Page](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile_page_responsive.gif?raw=true)
+
+
+* Add Tips Page
+   * Verify that the empty fields tooltips work.
+   * Verify that the Add Tip button links to the public Top Tips page, displays the tip that was added and displays flash message "tip successfully added".
+   * Verify that the Login page is responsive.
+
+   ![Empty Field Tooltips]()
+
+   ![Add Tip Button]()
+
+   ![Responsive Add Tips Page]()
+
 
 
 
