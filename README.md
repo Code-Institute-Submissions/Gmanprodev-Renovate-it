@@ -182,81 +182,87 @@ If you are unable to access the mockup links above please see the mockup images 
 
 ### Existing Features
 
-#### Elements seen on the landing page.
+#### Elements seen on the homepage
 
 * **Layout and Style**
-    * I wanted the web app to have an appearance that was associated with natural elements, such as water, wood and the sky. My aim was to provide users with an instant sense of calm as soon as the web app had loaded, with the colour scheme and fonts used I believe I have been able to achieve this. Given this site is a web app and is purely there to interact with the users senses, I wanted to keep the text elements as simple as possible by limiting the amount of text that is used. The layout is a basic use of columns and rows which keeps the buttons in a consistent grid format that changes from multiple columns on larger screens to one column on smaller screens.
+    * I wanted the web app to have an appearance that was associated with industrial colours and style. My aim was to have a lot of white and grey to reflect the industrial theme but also to layer on top of that a artistic brush stroke style to soften the look and feel. I kept all of the content in a square format to refelct the blocks that are used in building material.
+    * I installed Favicon scripts so that when the web app loads the user sees the R. logo next to the Renovate-it name at the top of the browser tab.
 
 * **Navigation bar**
-    * Has a `fixed` position on screen heights greater than 580px, to ensure that the logo can always be seen by the user, and a `absolute` postion on screen heights less than 580px to ensure there is enough content on the screen at any one time.
-    * A SerenAppy logo in the left corner which also serves as a link to resfresh the landing page. The logo remains the same on all screen sizes.
-    * The navbar background colour has ben built using a CSS gradient scheme to seamlessly move from one colour into another.
+    * Has a `fixed` position to ensure that the logo can always be seen by the user.
+    * A Renovate-it logo in the left corner which also serves as a link to the homepage. This logo moves to the centre of the navbar on smaller screens and links to the Profile page when a user is logged in.
+    * The page links are displayed on the right of the navbar. These turn into a burger menu on smaller screens and reveal a side navbar which displays from the right.
 
 * **Footer**
-    * Copyright information.
-    * Web app built by information (linked to Marc Gulliver Linkedin profile).
-    * Web app address (linked to web app landing page).
-    * Social media links - facebook, Twitter, Instagram and Youtube (linked to relevant login page).
-    * @ icon linked to an emailjs contact form modal.
-    * All footer text and icons are displayed in the colour Tawny and change to Cadet Blue when on `hover` and clicked.
+    * Logo displayed on the left of the footer.
+    * Logo is linked to the homepage. When a user is logged in it links to the Profile page.
+    * Social media links are on the right of the footer - facebook, Twitter and Instagram (linked to relevant login page).
+    * All footer text and icons are displayed in the colour white and wobble when on `hover` and clicked.
 
-* **How To Use SerenAppy Button**
-    * This button displays in the colour Peru with the text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. This button opens a pop up modal which has written instructions on how to use the web app.
+* **First Parallax**
+    * Displays a background image of grey brickwork. On top of the image sits text with two buttons, a welcome message with a Sign Up button and a login message with a login button. Both buttons have waves effects when on `hover` and clicked.
 
-* **Select Time Buttons**
-    * The buttons are presented in two columns beneath the heading "Select Time", the two columns reduce to one column on screen sizes less than 768px. The "Select Time" header is displayed in the colour Clear Day. Each button is displayed in the colour Peru, border colour Tawny, text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. There are six "Select Time" buttons, each represents a set number of minutes (2, 5, 10, 20, 30, 60). The selected time is passed through to the meditation page using Javascript and displays as a countdown timer. The user can only select one button at a time.
+* **Parallax Divider**
+    * This divides the top and bottom parallax. It displays four icons on one row and explains the user process. The icons and text gradually move down into one column as the screen get smaller.
 
-* **Select Season Buttons**
-    * The buttons are presented in two columns beneath the heading "Select Season", the two columns reduce to one column on screen sizes less than 768px. The "Select Season" header is displayed in the colour Clear Day. Each button is displayed in the colour Peru, border colour Tawny, the text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. There are four "Select Season" buttons, each represents a season (spring, summer, autumn, winter). The selected season is passed through to the meditation page using Javascript and displays the associated image and audio. The user can only select one button at a time.
+* **Second Parallax**
+    * Displays a background image of a modern kitchen. On top of the image sits text with a button linking to the public Top Tips page. The button has wave effects when on `hover` and clicked.
 
-* **GO Button**
-    * This button is round and centred at the bottom of the page. The button is displayed in the colour Peru, border colour Tawny, the text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. The Go button combines the time and the season selected and uses Javascript to create and display the meditation page for the user. If only one selection is made or no selections are made the user will see a Sweet Alert pop up modal which displays "Error" and explains what steps need to be taken.
-
-* **Hidden Pages**
-    * To increase the loading speed and reduce the users data usage the web app operates from a single html file (landing page). In the index.html file there is a `div` which holds all of the meditation page information and is hidden when the landing page loads. The information in this hidden `div` is replaced with the asscoiated image, audio and time based on the users selections, using Javascript. When the GO button is clicked the entire landing page is hidden and replaced with the meditation page using Javascript. 
-
-* **How To Use SerenAppy - Modal**
-    * The modal takes up 80% of the page and is displayed in the centre of the page. The modal has a background colour of Peru, all text is the colour Clear Day and the button is Cadet Blue which changes to a light grey colour when on `hover` and when clicked. The modal has two ways of closing, either click the close button in the bottom right corner or click the `x` in the top right corner. 
-
-* **Contact Form - Modal**
-    * The modal takes up 80% of the page and is displayed in the centre of the page. The modal has a background colour of Peru, all text is the colour Clear Day, the field boxes have a Cadet Blue border, the field box text is black and the submit button is Cadet Blue which changes to a light grey colour when on `hover` and when clicked. You can close the modal by clicking the `x` in the top right corner. You can submit the form by clicking the submit button, which is centred, at the bottom of the modal. All fields are validated so users can't submit the form with empty fields, also the email address is validated by using the `pattern` attribute within the html code which determines if the email format is correct or not. After clicking the submit button, with all fields correctly filled out, the user will see a Sweet Alert modal pop up informing the user of whether the email has been successfully sent or not. If all fields have been correctly filled out, when the submit button is clicked the fields are cleared and reset.
-
-* **Favicon**
-    * I installed Favicon scripts so that when the web app loads the user sees the S logo next to the SerenAppy name at the top of the browser tab.
-
-#### Elements seen on the 404 page.
+#### Elements seen on the 404 and 500 pages
 
 * **Layout and Style**
-    * Used the same colour scheme as the modals. Background colour of Peru, all the text is the colour Clear Day and the button which returns the user to the landing page is Cadet Blue which changes to light grey when on `hover` and clicked.
+    * A white page with both a header and button reflecting the same styling.
+    * The button links to the Homepage.
+    * The button has wave effects when on `hover` and clicked.
 
-* **Favicon**
-    * I installed Favicon scripts so that when the web app loads the user sees the S logo next to the SerenAppy name at the top of the browser tab.
+#### Elements seen on the Top Tips page
 
-#### Elements seen on all meditation pages.
+* **Search Bar**
+    * A search bar displays at the top of the page. The user can enter any words and the function will search through all the tips stored in the database and return the results. If there are no results the user will see a flash message informing them that no results were found. Below the search bar there are two buttons, search and reset, the search button when clicked starts the function and the reset button restores the Top Tips page and displays all of the tips. Both buttons have waves effects when on `hover` and clicked.
 
-* **Background Image**
-    * A full screen background image is displayed, the image shown is linked to which season the user has selected. The image has an opacity of 0.6 so that the elements on top of the image are clearly defined.
+* **Card Panels**
+    * Each of the tips are displayed inside a card panel, each card panel has an image which is associated with the tip category and below the image the category, username, location and tip are displayed as text. The Top Tip info is line clamped at one line so that the card panels all remain the same height. At the bottom of each card panel there is a Read More button which, when clicked, displays a secondary pop up card with the full Top Tip text. The button has wave effects when on `hover` and clicked.
 
-* **Countdown Timer**
-    * The timer displays in the format of 00:00 in the colour of Saddle Brown. Dependent on which time button the user has clicked, this time will be passed into the meditation page using Javascript and displayed in the top half of the screen. The time display can be moved up or down within the top half of the screen by the user on mobile devices, using touch scroll, depending on the users preference as to the best position. When the countdown timer gets to zero the audio stops, a chime sound indicates the session has finished and the timer is reset with the play/pause button resetting to play. 
+* **Back To The Top Button**
+    * The button is placed at the bottom of the page to enable the user to return to the top of the page without manually scrolling. I haven't included any pagination because I wanted it to be an infinity scrolling page. The button is Gin Fizz colour and changes to White when on `hover` and clicked.
 
-* **Play/Pause Button**
-    * The button styling mirrors the landing page, so the button is displayed in the colour Peru, border colour Tawny, the text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. This button is connected to the audio and the countdown timer using Javascript, when the meditation page loads the button text is displayed as "Play". When the user clicks the play button the audio starts playing and the timer starts counting down in tandem, the button text changes to "Pause" to indicate to the user that this button can now be used to pause the audio and timer.
+### Elements seen on the Login page
 
-* **Reset Button**
-    * The button styling mirrors the landing page, so the button is displayed in the colour Peru, border colour Tawny, the text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. This button is connected to the audio and the timer using Javascript, when the user clicks the reset button the audio stops, the timer goes back to displaying the original time selected amd the play/pause button displays the text "Play". The user can then click the play button to start the session again.
+* **Login Form**
+    * The form has a background colour of Gin Fizz, a username and password field and a Login button. The fields will display tooltips advising the user of any errors and the underline for each field will turn red if incorrect and turn green if correct. The Login button has a number of actions, depending on the users input, if the fields are blank "Please fill in", if the input is incorrect "incorrect password and/or username" and if all the inputs are correct it will take the user to their Profile page with a flash message "Welcome {username}. There is also a Sign Up button below the form in case the user isn't registered.
 
-* **Main Menu Button**
-    * The button styling mirrors the landing page, so the button is displayed in the colour Peru, border colour Tawny, the text displaying in the colour Clear Day, the button changes to the colour Tan and the text changes to Saddle Brown when on `hover`. This button is linked to the landing page address so that if the user wishes to return to the landing page upon finishing their meditation session or wishes to change their time or season selections they can do so with ease. On larger width screens the main menu button appears in the middle between the play/pause button and the reset button, on smaller width screens sizes the main menu button drops down below the other two buttons.
+### Elements seen on the Signup page
 
-* **Favicon**
-    * I installed Favicon scripts so that when the web app loads the user sees the S logo next to the SerenAppy name at the top of the browser tab.
+* **Signup Form**
+    * The form has a background colour of Gin Fizz, a username and password field and a Signup button. Below each field there is the text "*requirements", if the user `hover` or clicks on this text it will display a tooltip with the requirements for each field. The user will also see tooltips advising the them of any errors and the underline for each field will turn red if incorrect and turn green if correct. The Signup button has a number of actions, depending on the users input, if the fields are blank "Please fill in" and if all the inputs are correct it will take the user to their Profile page with a flash message "Welcome {username}.. There is also a Login button below the form in case the user is already registered.
+
+### Elements seen on the Profile page
+
+* **Tips added by user**
+    * This page displays only the tips that have been added by the user that is logged in, at the bottom of each card panel is a Edit and Delete button. The Edit button links to the Edit page which has the same format as the Add Tips page, giving the user the ability to change any of the information held in the database. The delete button opens a modal which gives the user a secondary confirmation to delete or a close button to stop the delete action.
+    
+* **Back To The Top Button**
+    * The button is placed at the bottom of the page to enable the user to return to the top of the page without manually scrolling. I haven't included any pagination because I wanted it to be an infinity scrolling page. The button is Gin Fizz colour and changes to White when on `hover` and clicked.
+
+### Elements seen on the Edit page
+
+* **Edit Form**
+    * The form has a background colour of Gin Fizz, category, location and top tip fields are pre filled with the users original information which can be edited by the logged in user. Below the fields is a Save Changes button, upon clicking the button the changes are saved to the database and the user is redirected to their Profile page with a flash message "Tip Updated".
+
+### Elements seen on the Add Tips page
+
+* **Add Tip Form**
+    * The form has a background colour of Gin Fizz with category, location and top tip fields. The category field is a dropdown selection and both the location and top tip fields are text. Below the fields is a Add Tip button, upon clicking the button the information is saved to the database and the user is redirected to their Profile page with a flash message "Tip Successfully Added".
+
+### Logout Function
+
+* **Logout**
+    * Upon clicking the Logout link in the navbar the user is redirected to the Login page with a flash message "you are logged out".
 
 ### Features left to implement
 
-* **Audio Library API** - To enable potential users to choose from a much wider variety of audio options.
-* **Different Languages** - To enable potential users to select from a list of languages and have the web app display using the selected language. This would allow the web app to be used globally.
-* **Built In Volume Controls** - To enable potential users to control the audio volume within the web app. At the moment the volume is controlled by the devices volumes settings.
+* **Admin Account** - To allow an admin user to access all of the databse information for editing and deleting purposes.
+* **Save Tips** - To enable users to save tips to a project list when logged in so that they can access particular tips rather than searching for them again.
 * **Tracking User Behaviour** - Use an analytics tool such as [Hotjar](https://www.hotjar.com/) to view user behaviour.
 * **Most and Least Visited Pages on the Site** - Use an analytics tool such as [Hotjar](https://www.hotjar.com/) to understand where the traffic is going on the site.
 
