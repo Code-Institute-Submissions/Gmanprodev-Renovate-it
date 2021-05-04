@@ -165,7 +165,7 @@
 
    * I used the [W3C CSS Validation Service](https://jigsaw.w3.org/) to validate my css code.
 
-   ![CSS Validation]()
+   ![CSS Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/css_test_validation.png?raw=true)
 
 
    * I used the [jshint](https://jshint.com/) website to validate my Javascript code.
