@@ -40,12 +40,12 @@
 
    * Verify that the links in the footer work.
 
-   ![Footer Links]() 
+   ![Footer Links](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/home_footer_links.gif?raw=true) 
 
 
-   * Verify that the nav bar moves with the rest of the page on scroll (screen heights less than 580px to ensure there is enough content on the page at any one time).
+   * Verify that all the buttons work as they should.
 
-   ![Navbar Absolute Position](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/navbar_absolute_position.gif?raw=true)
+   ![Buttons]()
 
 
    * Verify that by `hover` and clicking on the all the landing page buttons the background and text colours change to show which selection the user has made.
