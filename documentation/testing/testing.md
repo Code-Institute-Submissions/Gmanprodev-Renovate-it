@@ -38,19 +38,19 @@
    ![Navbar Links](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/home_navbar_links.gif?raw=true) 
 
 
-   * Verify that the links in the footer work.
+   * Verify that the links in the footer work and the social media icons wobble on `hover`.
 
    ![Footer Links](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/home_footer_links.gif?raw=true) 
 
 
    * Verify that all the buttons work as they should.
 
-   ![Buttons]()
+   ![Buttons](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/home_buttons.gif?raw=true)
 
 
-   * Verify that by `hover` and clicking on the all the landing page buttons the background and text colours change to show which selection the user has made.
+   * Verify that the Home Page is responsive.
 
-   ![Interactive Button Colours](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/interactive_button_colours.gif?raw=true)
+   ![Responsive Home Page]()
 
 
    * Verify that in the footer the social media icons change colour and `bounce` when on hover, also that the icons are linked to the relevant log in pages and these open in a new browser tab. 
