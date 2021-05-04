@@ -61,7 +61,9 @@
 
    ![Search Function](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/tips_search.gif?raw=true)
 
-   ![Search Function]()
+   ![Read More Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/read_more.gif?raw=true)
+
+   ![Back To Top Button]()
 
 
 
