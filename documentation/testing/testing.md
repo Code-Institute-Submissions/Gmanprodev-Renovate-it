@@ -127,11 +127,11 @@
    * Verify that the Add Tip button links to the public Top Tips page, displays the tip that was added and displays flash message "tip successfully added".
    * Verify that the Login page is responsive.
 
-   ![Empty Field Tooltips]()
+   ![Empty Field Tooltips](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/addtip_empty_fields.gif?raw=true)
 
-   ![Add Tip Button]()
+   ![Add Tip Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/addtip_tip_page.gif?raw=true)
 
-   ![Responsive Add Tips Page]()
+   ![Responsive Add Tips Page](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/addtip_page_responsive.gif?raw=true)
 
 
 
