@@ -146,21 +146,21 @@
 
 ### Code Validation
 
-   * I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my html code.
+   * I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my html code. The errors that exist are for Headers and for input fields, which I believe stem from using Jinja templating.
 
-   ![index.html Validation]()
+   ![index.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/index.html_test_validation.png?raw=true)
 
-   ![tips.html Validation]()
+   ![tips.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/tips.html_test_validation.png?raw=true)
    
-   ![signup.html Validation]()
+   ![signup.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/signup.html_test_validation.png?raw=true)
 
-   ![profile.html Validation]()
+   ![profile.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/profile.html_test_validation.png?raw=true)
 
-   ![login.html Validation]()
+   ![login.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/login.html_test_validation.png?raw=true)
 
-   ![edit_tips.html Validation]()
+   ![edit_tips.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/edit_tips.html_test_validation.png?raw=true)
 
-   ![add_tips.html Validation]()
+   ![add_tips.html Validation](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/add_tips.html_test_validation.png?raw=true)
 
 
    * I used the [W3C CSS Validation Service](https://jigsaw.w3.org/) to validate my css code.
