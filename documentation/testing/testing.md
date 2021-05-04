@@ -135,19 +135,10 @@
 
 
 
-
-
-
-
-
-
-
 #### Conclusion
 
-   * In my original mock ups and in my first attemp at building the countdown timer (before any conducted any testing) I included a moving circle track which moved in tandem with the timer. I decided to remove this from my design for two reasons, one being that it clogged up the page and the other being that it became too complicated for someone of my experience - this issue has been fixed for the first release.
-   * I found that when the timer got to zero if the user clicked the play button again the timer started counting into minus numbers, I added a function which reset the timer and buttons upon reaching zero - this issue has been fixed for the first release.
-   * I found that the time format wasn't displaying correctly so I built a Jasmine test to solve the problem - this issue has been fixed for the first release.
-   * During testing I found unused code in my index.html and style.css files, relating to the SVG countdown track - I removed this for the first release. 
+   * I found that the Add Tips page doesn't work as it should whilst using the DevTools responsive window or smaller phone devices as the content continues to get smaller than the device window. I found that if you hard refresh the content then fills the window in the way that it should. I tested this on multiple real mobile devices and didn't encounter any problems.
+   * I didn't find any further issues.
 
 
 
