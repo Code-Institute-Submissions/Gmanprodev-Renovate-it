@@ -177,15 +177,15 @@
 
 ### Browser Validation
 
-   * Chrome - works correctly. Click [here](test-images/chrome_test.jpg) for the test image.
-   * Edge - works correctly. Click [here](test-images/edge_test.jpg) for the test image.
-   * Safari - works correctly. Click [here](test-images/safari_test.png) for the test image.
-   * Firefox - works correctly. Click [here](test-images/firefox_test.png) for the test image.
-   * Opera - works correctly. Click [here](test-images/opera_test.png) for the test image.
+   * Chrome - works correctly.
+   * Edge - works correctly.
+   * Safari - works correctly.
+   * Firefox - works correctly.
+   * Opera - works correctly.
 
 ### Lighthouse Audit
 
-   * Click [here](test-images/lighthouse_report.pdf) for the full report.
+   * Click [here](test-images/lighthouse_report.pdf) for the report.
    * No reccommendations in this report have been implemented in the first release but will be looked at in future releases.
 
 #### Conclusion
