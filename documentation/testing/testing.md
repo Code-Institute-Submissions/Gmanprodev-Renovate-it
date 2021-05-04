@@ -50,113 +50,16 @@
 
    * Verify that the Home Page is responsive.
 
-   ![Responsive Home Page]()
+   ![Responsive Home Page](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/home_page_responsive.gif?raw=true)
 
 
-   * Verify that in the footer the social media icons change colour and `bounce` when on hover, also that the icons are linked to the relevant log in pages and these open in a new browser tab. 
+* Top Tips Page
+   * Verify that the search function works.
+   * Verify that the Read More buttons work.
+   * Verify that the Back To Top button works.
 
-   ![Footer Links Hover](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/footer_links_hover.gif?raw=true)
+   ![Search Function]()
 
-   ![Footer Links Hover](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/facebook_link.gif?raw=true)
-
-   ![Footer Links Hover](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/twitter_link.gif?raw=true)
-
-   ![Footer Links Hover](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/instagram_link.gif?raw=true)
-
-   ![Footer Links Hover](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/youtube_link.gif?raw=true)
-   
-
-   * Verify that the SerenAppy website address in the footer changes colour when on `hover` and clicked and loads the landing page. 
-
-   ![Website Link](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/website_link.gif?raw=true)
-   
-
-   * Verify that the web app built by Marc Gulliver changes colour when on `hover` and clicked and opens my LinkedIn profile in a new browser tab.
-
-   ![LinkedIn Link](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/linkedin_link.gif?raw=true)
-
-
-   * Verify that the "How To Use SerenAppy" button at the top of the page launches the modal and displays the instructions, also that both close buttons shut down the modal.
-
-   ![Instructions Modal](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/instructions_modal.gif?raw=true)
-
-
-   * Verify that the @ icon in the footer changes colour on `hover` and when clicked and opens the contact form modal and that the close button shuts down the modal.
-
-   ![Contact Modal](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/contact_modal.gif?raw=true)
-
-
-   * Verify that the contact form modal validates the users input before the user can submit the form.
-
-   ![Form Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/form_validation1.jpg?raw=true)
-
-   ![Form Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/form_validation2.jpg?raw=true)
-
-   ![Form Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/form_validation3.jpg?raw=true)
-
-   ![Form Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/form_validation4.jpg?raw=true)
-
-   ![Form Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/form_validation5.jpg?raw=true)
-
-   ![Form Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/form_validation6.jpg?raw=true)
-
-
-   * Verify that the contact form submit button activates a success alert when emailjs successfully sends the form information to my Gmail account.
-
-   ![Email Success](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/submit_success.gif?raw=true)
-
-
-   * Verify that the when the contact form is successfully sent all the form fields are automatically cleared.
-
-   ![Clear Input Fields](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/clear_fields.gif?raw=true)
-
-
-   * Verify that the contact form information has been sent to my Gmail account by emailjs.
-
-   ![Emailjs Received](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/emailjs_received.jpg?raw=true)
-
-
-   * Verify that the contact form submit button activates a error alert when emailjs is unsuccessful.
-
-   ![Email Error](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/email_error.gif?raw=true)
-
-
-   * Verify that in each section of buttons (Time & Season) only one button can be selected at a time.
-
-   ![Selection Buttons](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/selection_buttons.gif?raw=true)
-   
-
-   * Verify that if the user doesn't select any options or only selects one option a error message will prompt the user take the right actions.
-
-   ![Selection Error](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/selection_error.gif?raw=true)
-
-
-   * Verify that the selection buttons move into one column on small screen sizes.
-
-   ![Responsive Columns](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/responsive_columns.gif?raw=true)
-
-
-   * Verify that the page is responsive.
-
-   ![Responsive Page](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/responsive_page1.gif?raw=true)
-
-
-* Meditation Pages
-   * Verify that all of the landing page elements are hidden when the meditation page loads. 
-   * Verify that all the time button selections are being passed through and displayed correctly.
-   * Verify that all the season button selections are being passed through and diplaying the right background image.
-
-   ![Meditation Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/meditation_load1.gif?raw=true)
-
-   ![Meditation Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/meditation_load2.gif?raw=true)
-
-   ![Meditation Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/meditation_load2.gif?raw=true)
-
-   ![Meditation Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/meditation_load4.gif?raw=true)
-
-   ![Meditation Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/meditation_load5.gif?raw=true)
-
-   ![Meditation Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/meditation_load6.gif?raw=true)
 
 
    * Verify that all the function buttons change background colour and text colour on `hover` and when clicked.
