@@ -33,9 +33,9 @@
 ## Manual Testing
 
 * Home Page
-   * Verify that all works as it should on the Home Page.
+   * Verify that the links in the navbar work.
 
-   ![Testing Home Page](https://github.com/Gmanprodev/Renovation-it/blob/master/documentation/testing/test-images/home_page_test.gif?raw=true) 
+   ![Navbar Links](https://github.com/Gmanprodev/Renovation-it/blob/master/documentation/testing/test-images/home_navbar_links.gif?raw=true) 
 
 
    * Verify that by clicking the logo in the header it refreshes the landing page and that the nav bar is fixed when on scroll.
