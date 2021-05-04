@@ -270,13 +270,8 @@ If you are unable to access the mockup links above please see the mockup images 
 
 ### Bugs and Fixes for Future Releases After Testing
  
-* **Colour Contrasts** - The Lighthouse Audit Chrome extension highlighted that there are improvements needed on colour contrast, performance on the time it takes for the site to load and become interactive. These issues will be addressed in the next release.
-* **Website Address in Footer** - The website address for SerenAppy does not currently exist and does not link to another page. This will be addressed in the next release.
-* **Social Media Links in Footer** - The social media icons are linked to the correct pages, however these are currently generic login pages. These will direct you to the company specific pages in future releases.
-* **Audio Quality** - Although the sound quality is pretty good the length of the audio files mean that there are too many stop and start points whilst the audio is playing. This leads to a disturbance for the user during their meditation sessions. These audio files will be updated in future releases.
-* **Heade Size** - Reduce the size of the header (navbar) on smaller screen heights (laptops) so that more content can fit on the page - this will be implemented in future releases as the majority of users will be viewing the web app on a mobile device.
-* **Background Images** - On big screen sizes the background image on the meditation pages becomes larger than the screen and some of the image is cut off. However this isn't very noticable and the images remain defined and clear - this will be implemented in future releases as the majority of users will be viewing the web app on a mobile device.
-* **Confirmation Email** - Using emailjs to also send an email to the user to confirm their email has been received - this will be implemented in future releases as the user alreday gets a pop up informing them that the email has successfully been sent - this will be implemented in future releases.
+* **Image Size and Hosting** - The Lighthouse Audit Report will show better performance.
+* **Social Media Links in Footer** - The social media icons are linked to the correct pages, however these are currently generic login pages. These will direct you to the company specific pages in future releases. They could also do with more space between the icons.
 
 ## Technologies Used
 
@@ -331,6 +326,32 @@ Testing information can be found [here](documentation/testing/testing.md).
 
 This web app was developed in Gitpod and pushed to the remote repository, GitHub and Heroku. The live page is deployed on Heroku. 
 
+### How to clone this project:
+
+* Log In into GitHub and access the repository.
+* Click on the "Code" button (near the green "GitPod" one).
+* Copy the URL.
+* Open Gitbash from your computer.
+* Type "git clone", paste the URL and press "enter".
+
+### How to run the code locally:
+* Create the required databases. You can do this by accessing Mongo DB. Create a cluster and then create the required collections (as seen in Use of Database). Don't forget to add the value to every key.
+* Go to GitPod and install the requirements by typing the following in the terminal: pip3 install -r requirements.txt.
+* Add the secret environment variables: create a .gitignore file; then create a env.py file and add it to the .gitignore . In the env.py add the following environment variables:
+* At this point you can go back to the terminal and type "python3 app.py" to open the preview of the website.
+
+### How to deploy this project - with Heroku:
+* From the terminal: type "pip3 freeze --local > requirements.txt" to update the list of requirements needed to run this application.
+* Type " echo web: python app.py > Procfile " to create the Procfile.
+* Go to Heroku and if you don't have it create an account.
+* Click on "New" on the top right corner and select "Create new app". In the modal, add a name and select the region, then click "Create app".
+* The way I decided to use is via GitHub. To select this method click on "connect to GitHub" and select the right repository. Click on connect.
+* Before selecting "Enable Automatic Deploys" go to the setting!
+* The environment variables are hidden so we will have to write them manually. Do do this, from settings click on "Reveal config vars" and insert your variables.
+* Go back to the terminal in GitPod and push both the requirements.txt and the Procfile one at the time, with their respective commits.
+* We can now go back to Heroku and click on "Enable Automatic Deployment". Next click on "Deploy Branch".
+* The website is now successfully deployed and you can view it by clicking on "Open app".
+
 **Used commands during deployment:**
 * `git add .` - to add the files to the staging area.
 * `git commit -m "text message here"` - to commit the files.
@@ -338,9 +359,8 @@ This web app was developed in Gitpod and pushed to the remote repository, GitHub
 * `git status` - to see the current status of the files.
 
 ### Hosting on GitHub Pages
-
 * Log into GitHub.
-* From the list of repositories choose [SerenAppy](https://github.com/Gmanprodev/SerenAppy-Web-App).
+* From the list of repositories choose [Renovate-it](https://github.com/Gmanprodev/Renovate-it).
 * Go to settings.
 * Scroll down to GitHub Pages section.
 * Select as a source **master branch**.
@@ -353,12 +373,12 @@ For more detailed information regarding deployment to GitHub Pages click [here](
 
 **Clone this project from GitHub:**
 
-* Go to [SerenAppy](https://github.com/Gmanprodev/SerenAppy-Web-App) GitHub repository.
+* Go to [Renovate-it](https://github.com/Gmanprodev/Renovate-it) GitHub repository.
 * Click on "Clone or download" green button.
 * Copy the URL to the repository.
 * Open the terminal in your IDE.
 * Choose the working directory where you would like to have the cloned repository.
-* Type git clone, and add the URL you copied from Github: `git clone https://github.com/Gmanprodev/SerenAppy-Web-App.git`
+* Type git clone, and add the URL you copied from Github.
 * Press Enter and your local clone will be created.
 
 For more information regarding cloning of a repository click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
@@ -373,7 +393,6 @@ All content in this web app was written by me.
 
 **All Images & Audio**
    * All of the images used in the web app are free and do not require permission to use.
-   * All of the audio and sounds used in the web app are free and do not require permission to use.
 
 
 
@@ -381,8 +400,7 @@ All content in this web app was written by me.
 
 #### Examples and Tutorials and Samples
 
-* [Code Institute](https://codeinstitute.net/) - I used the tutorials on Jasmine and Emailjs to build the relevant code.
-* [Meditation App Tutorial](https://www.youtube.com/watch?v=oMBXdZzYqEk) - used to undertsand how the javascript countdown timer functions work.
+* [Code Institute](https://codeinstitute.net/) - I used the Task Manager mini project to build my code foundations and then completely cistomised it thereafter.
    
 
 #### Pages used for information
@@ -395,12 +413,9 @@ All content in this web app was written by me.
 * [Codepen](https://codepen.io/)
 
 #### I received advice and encouragement from
-   * Seun Owonikoko (my mentor)
+   * Akshat (my mentor)
    * Tutor Support (CI online webchat)
    * SuzanneNL (fellow student)
-   * Anthony (fellow student)
-   * Malia (fellow student)
-   * Neringa (fellow student)
 
 ## Disclaimer
 
