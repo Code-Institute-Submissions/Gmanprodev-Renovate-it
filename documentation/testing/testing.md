@@ -148,11 +148,11 @@
 
    * I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my html code.
 
-   ![Html Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/index.html_validation.jpg?raw=true)
+   ![Html Validation]()
 
-   ![Html Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/test.html_validation.jpg?raw=true)
+   ![Html Validation]()
    
-   ![Html Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/404.html_validation.jpg?raw=true)
+   ![Html Validation]()
 
 
    * I used the [W3C CSS Validation Service](https://jigsaw.w3.org/) to validate my css code.
