@@ -92,50 +92,41 @@
    * Verify that the sign up button links to the Sign Up page.
    * Verify that the Login page is responsive.
 
-   ![Empty Field Tooltip]()
+   ![Empty Field Tooltip](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/login_empty_fields.gif?raw=true)
 
-   ![Login Button]()
+   ![Login Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/login_button.gif?raw=true)
 
-   ![Sign Up Button]()
+   ![Sign Up Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/login_signup_button.gif?raw=true)
 
-   ![Responsive Login Page]()
-
-
-
-   * Verify that all the function buttons change background colour and text colour on `hover` and when clicked.
-
-   ![Function Buttons](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/function_buttons.gif?raw=true)
+   ![Responsive Login Page](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/login_page_responsive.gif?raw=true)
 
 
-   * Verify that by clicking the Play button the timer starts counting down and the audio starts playing, also the text on the button changes to Pause.
-   * Verify that by clicking the Pause button the timer and the audio pauses, also the text on the button changes to Play.
+* Profile Page
+   * Verify that the when a user is logged in the page only displays tips added by that user.
+   * Verify that the correct tip information is displaying and the Read More pop up card panel works.
+   * Verify that the Edit button works.
+   * Verify that the Delete button works.
+   * Verify that the Back To Top button works.
+   * Verify that the Profile page is responsive.
 
-   ![Play/Pause Button](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/play-pause_button.gif?raw=true)
+   ![User Tips Displayed]()
 
+   ![Read More Button]()
 
-   * Verify that the Reset button resets the audio and the timer to the original time, also that the Play/Pause button displays the text Play.
+   ![Edit Button]()
 
-   ![Reset Button](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/reset_button.gif?raw=true)
+   ![Delete Button]()
 
+   ![Back To Top Button]()
 
-   * Verify that the Main Menu button takes the user back to the landing page.
-
-   ![Main Menu Button](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/main-menu_button.gif?raw=true)
-
-
-   * Verify that when the timer gets to zero the timer resets to the original starting time, the Play/Pause button text displays Play, the audio is reset and a bleep sound plays to signify the end of the meditation session.
-
-   ![Timer Ends](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/timer_ends.gif?raw=true)
-
-
-   * Verify that the Main Menu button moves below the other two buttons on smaller screen sizes.
-
-   ![Button Positions](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/button_positions.gif?raw=true)
+   ![Responsive Profile Page]()
 
 
-   * Verify that the page is responsive.
-   
-   ![Responsive Page](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/responsive_page2.gif?raw=true)
+
+
+
+
+
 
 
 #### Conclusion
