@@ -57,6 +57,9 @@
    * Verify that the search function works.
    * Verify that the Read More buttons work.
    * Verify that the Back To Top button works.
+   * Verify that the Top Tips page is responsive.
+
+   ![Search Function](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/tips_search.gif?raw=true)
 
    ![Search Function]()
 
