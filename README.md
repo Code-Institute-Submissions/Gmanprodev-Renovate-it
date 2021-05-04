@@ -151,13 +151,13 @@ All the User Stories have been assessed against value and complexity on the char
 #### Colors
 
 Following colours have been used:
-* ![#CD853F](https://placehold.it/15/CD853F/000000?text=+) #CD853F (Peru) 
-* ![#C76302](https://placehold.it/15/C76302/000000?text=+) #C76302 (Tawny) 
-* ![#D2B48C](https://placehold.it/15/D2B48C/000000?text=+) #D2B48C (Tan) 
-* ![#5f9ea0](https://placehold.it/15/5f9ea0/000000?text=+) #5f9ea0 (Cadet Blue) 
-* ![#8B4513](https://placehold.it/15/8B4513/000000?text=+) #8B4513 (Saddle Brown)    
-* ![#6c757d](https://placehold.it/15/6c757d/000000?text=+) #6c757d (Light Grey) 
-* ![#E6F4F1](https://placehold.it/15/E6F4F1/000000?text=+) #E6F4F1 (Clear Day) 
+* ![#26a69a](https://place-hold.it/20/26a69a/000000?text=+) #26a69a (Teal) 
+* ![#1d8882](https://place-hold.it/20/1d8882/000000?text=+) #1d8882 (Turquoise) 
+* ![#f7e7ce](https://place-hold.it/20/f7e7ce/000000?text=+) #f7e7ce (Gin Fizz) 
+* ![#000000](https://place-hold.it/20/000000/000000?text=+) #000000 (Black)    
+* ![#F44336](https://place-hold.it/20/F44336/000000?text=+) #F44336 (Red) 
+* ![#9e9e9e](https://place-hold.it/20/9e9e9e/000000?text=+) #9e9e9e (Nobel) 
+* ![#fff](https://place-hold.it/20/fff/000000?text=+) #fff (White) 
 
 
 
