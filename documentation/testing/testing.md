@@ -165,7 +165,7 @@
 
    * I used the [W3C CSS Validation Service](https://jigsaw.w3.org/) to validate my css code.
 
-   ![CSS Validation](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/css_validation.jpg?raw=true)
+   ![CSS Validation]()
 
 
    * I used the [jshint](https://jshint.com/) website to validate my Javascript code.
