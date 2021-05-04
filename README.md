@@ -283,30 +283,30 @@ If you are unable to access the mockup links above please see the mockup images 
 
 * HTML - base language for this project.
 * CSS - used for styling the HTML code.
-* JavaScript - used to make the web app interactive.
+* JavaScript/Jquery - used to make the web app interactive.
+* Python (flask) - Framework.
+* Jinja - templating.
+
+### Database
+
+* MongoDB - document key vaue pairs database.
 
 ### Libraries
 
-* [Bootstrap](https://getbootstrap.com/) - used for responsive grid system, styling and modals.
-* [JQuery](https://jquery.com/) & [Popper](https://popper.js.org/) - were used in conjunction with the Bootstrap library and Javascript.
+* [Materialize](https://materializecss.com/getting-started.html) - used for responsive grid system, styling and modals.
+* [JQuery](https://jquery.com/) - were used in conjunction with the Materialize library.
 * [FontAwseome](https://fontawesome.com/) - used for all icons on the site.
 * [Google Fonts](https://fonts.google.com/) - used for the Pacifico fonts.
 * [Hover.css](https://ianlunn.github.io/Hover/) - used to animate the social media icons.
 * [Unsplash](https://unsplash.com/) - used for all images.
-* [Sweetalert](https://sweetalert2.github.io/) - used for "Success" and "Error" pop ups in conjuction with the GO button on the landing page and the Emailjs contact form.
-* [Zapsplat](https://www.zapsplat.com/) - used for audio files and sound effects.
 * [Favicon.io](https://favicon.io/) - used for creating a favicon.
-
-### API
-
-* [Emailjs](https://www.emailjs.com/) - used to send the contact form in an email format to my gmail account.
-
 
 ### Tools
 
 * [Gitpod](https://www.gitpod.io) - used as IDE for this project.
 * [Git](https://git-scm.com/) - used for version control.
-* [Github](https://github.com/) - used to host repository and live website.
+* [Github](https://github.com/) - used to host repository.
+* [Heroku](https://www.heroku.com/) - used to deploy.
 * [Figma](https://www.figma.com/) - used for creation of mockups.
 * [Am I Responsive](http://ami.responsivedesign.is/) - used for testing purposes as well as creating the image to display the web pages on different devices.
 * [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging.
@@ -317,9 +317,6 @@ If you are unable to access the mockup links above please see the mockup images 
 * [Free Formatter](https://www.freeformatter.com/) - used to format my html, css and javascript code.
 * [Browserstack](https://www.browserstack.com/) - used to test my site on different browsers.
 * [Color Scheme Designer](http://colorschemedesigner.com/) - used to test colour combinations.
-* [CSS Gradient](https://cssgradient.io/) - used to build the colour gradient in the header and footer.
-* [Canva](https://www.canva.com/) - used to create the SerenAppy logo.
-* [GIMP](https://www.gimp.org/) - used this software to give my logo and favicon a transparent background.
 * [jshint](https://jshint.com/) - used to validate my Javascript code.
 
 
@@ -331,7 +328,7 @@ Testing information can be found [here](documentation/testing/testing.md).
 
 ## Deployment
 
-This web app was developed in Gitpod and pushed to the remote repository, GitHub. The live page is hosted on GitHub Pages. 
+This web app was developed in Gitpod and pushed to the remote repository, GitHub and Heroku. The live page is deployed on Heroku. 
 
 **Used commands during deployment:**
 * `git add .` - to add the files to the staging area.
