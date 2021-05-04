@@ -63,7 +63,9 @@
 
    ![Read More Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/read_more.gif?raw=true)
 
-   ![Back To Top Button]()
+   ![Back To Top Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/back_to_top.gif?raw=true)
+
+   ![Responsive Top Tips Page]()
 
 
 
