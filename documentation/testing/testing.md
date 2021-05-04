@@ -65,6 +65,21 @@
 
    ![Back To Top Button](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/back_to_top.gif?raw=true)
 
+   ![Responsive Top Tips Page](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/tips_page_responsive.gif?raw=true)
+
+
+* Sign Up Page
+   * Verify that the requirements tooltips work.
+   * Verify that the empty fields tooltips work.
+   * Verify that the sign up button takes you to the Profile page and displays the username.
+   * Verify that the sign up page is responsive.
+
+   ![Requirements Tooltips]()
+
+   ![Read More Button]()
+
+   ![Back To Top Button]()
+
    ![Responsive Top Tips Page]()
 
 
