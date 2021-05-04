@@ -148,11 +148,19 @@
 
    * I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my html code.
 
-   ![Html Validation]()
+   ![index.html Validation]()
 
-   ![Html Validation]()
+   ![tips.html Validation]()
    
-   ![Html Validation]()
+   ![signup.html Validation]()
+
+   ![profile.html Validation]()
+
+   ![login.html Validation]()
+
+   ![edit_tips.html Validation]()
+
+   ![add_tips.html Validation]()
 
 
    * I used the [W3C CSS Validation Service](https://jigsaw.w3.org/) to validate my css code.
