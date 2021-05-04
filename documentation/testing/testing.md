@@ -1,6 +1,6 @@
 # Testing
 
-[back to README.md file](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/README.md)
+[back to README.md file](https://github.com/Gmanprodev/Renovate-it/blob/master/README.md)
 
 ## Table of Content
 
@@ -21,22 +21,21 @@
 
 * Testing the responsiveness of the web app.
     * As an outcome I added a number of media queries in order to ensure the website is still user friendly on different screen sizes.
-    * I used Bootstrap to ensure I have reactive columns on different screen sizes.
+    * I used Materialize to ensure I have reactive columns on different screen sizes.
 * Testing that the css is targeting the relevant html code.
     * As an outcome the webiste is responsive on all screen sizes.
 * Console Debugging
     * As an outcome I was able to see whether my Javascript functions were being called and were executing properly by displaying a console.log value in my console.
-    * I noted that a Favicon was missing and was able to fix this by adding a favicon script and images. 
-    * I noted that there were two errors in the conslole relating to "Unable to load sourcemap", my mentor explained to me that these can be ignored.
-    * I noted that on some of the DevTools responsive device options there is a visible break line between the header and the body. I can confirm that this doesn't appear on any real devices and I believe it's just a problem with the DevTools responsive device displays.
+    * I noted that a the Favicon wasn't displaying properly and was able to fix this by editing the url code.
+    * I noted that when reducing the size of the screen in DevTools the page would randomly become significantly smaller than the device page. I couldn't recreate this probelm on any real devices and therefore believe it's just a problem with the DevTools responsive device displays.
 
 
 ## Manual Testing
 
-* Landing Page
-   * Verify that when the page loads it hides the meditation page `div`.
+* Home Page
+   * Verify that all works as it should on the Home Page.
 
-   ![Hidden Meditation Page On Load](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/hidden_meditation_page.gif?raw=true) 
+   ![Testing Home Page](https://github.com/Gmanprodev/Renovation-it/blob/master/documentation/testing/test-images/home_page_test.gif?raw=true) 
 
 
    * Verify that by clicking the logo in the header it refreshes the landing page and that the nav bar is fixed when on scroll.
