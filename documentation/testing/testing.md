@@ -71,16 +71,19 @@
 * Sign Up Page
    * Verify that the requirements tooltips work.
    * Verify that the empty fields tooltips work.
-   * Verify that the sign up button takes you to the Profile page and displays the username.
+   * Verify that the sign up button links to the Profile page, displays the username, displays flash message "signup successful and text "you haven't added any tips yet".
+   * Verify that the login button links to the Login page.
    * Verify that the sign up page is responsive.
 
-   ![Requirements Tooltips]()
+   ![Requirements Tooltips](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/requirements_tooltips.gif?raw=true)
 
-   ![Read More Button]()
+   ![Empty Field Tooltip]()
 
-   ![Back To Top Button]()
+   ![Sign Up Button]()
 
-   ![Responsive Top Tips Page]()
+   ![Login Button]()
+
+   ![Responsive Sign Up Page]()
 
 
 
