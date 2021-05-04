@@ -33,14 +33,14 @@
 ## Manual Testing
 
 * Home Page
-   * Verify that the links in the navbar work.
+   * Verify that the links in the navbar work and the navbar is fixed when on scroll.
 
-   ![Navbar Links](https://github.com/Gmanprodev/Renovation-it/blob/master/documentation/testing/test-images/home_navbar_links.gif?raw=true) 
+   ![Navbar Links](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/home_navbar_links.gif?raw=true) 
 
 
-   * Verify that by clicking the logo in the header it refreshes the landing page and that the nav bar is fixed when on scroll.
+   * Verify that the links in the footer work.
 
-   ![Clicking The Logo Refreshes The Page](https://github.com/Gmanprodev/SerenAppy-Web-App/blob/master/documentation/testing/test-images/logo_click_page_resfresh.gif?raw=true) 
+   ![Footer Links]() 
 
 
    * Verify that the nav bar moves with the rest of the page on scroll (screen heights less than 580px to ensure there is enough content on the page at any one time).
