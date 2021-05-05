@@ -142,10 +142,8 @@ All the User Stories have been assessed against value and complexity on the char
 * The top area of the chart has been given the higher priority of implementation because it represents the most important features including:
   * Colour scheme and design.
   * Simple to follow instructions
-  * Intercative and showing real time feedback to the user.
-  * Easy to use audio and timer function controls.
-  * Allowing users to interact with the supplier.
   * Responsive Web app.
+  * Ability to create, read, update and delete from within the app.
 * I have addressed all of the high value and high/low complexity in the first release.
 * The features with high complexity and low value have been postponed for future updates/releases.
 
@@ -323,6 +321,7 @@ Click [here](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation
 * [Browserstack](https://www.browserstack.com/) - used to test my site on different browsers.
 * [Color Scheme Designer](http://colorschemedesigner.com/) - used to test colour combinations.
 * [jshint](https://jshint.com/) - used to validate my Javascript code.
+* [PEP8](http://pep8online.com/) - used to validate my Python code.
 
 
 
