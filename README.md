@@ -15,11 +15,11 @@ The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](ht
 
 1. [UX](#ux)
     * [Goals](#goals)
-        * [SerenAppy goals](#serenappy-goals)
+        * [Renovate-it goals](#renovate-it-goals)
         * [Business goals](#business-goals)
         * [Customer goals](#customer-goals)
     * [User Stories](#user-stories)
-        * [Local Health and Well-being Centre](#local-health-and-well-being-centre)
+        * [Renovate-it business](#renovate-it-business)
         * [The potential customer](#the-potential-customer)
          * [The UX designer](#the-ux-designer)
     * [Minimum Viable Product](#minimum-viable-product)
@@ -29,9 +29,15 @@ The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](ht
     * [Wireframes](#wireframes)
 2. [Features](#features)
     * [Existing Features](#existing-features)
-        * [Elements seen on the landing page](#elements-seen-on-the-landing-page)
-        * [Elements seen on the 404 page](#elements-seen-on-the-404-page)
-        * [Elements seen on all meditation pages](#elements-seen-on-all-meditation-pages)
+        * [Elements seen on the homepage](#elements-seen-on-the-homepage)
+        * [Elements seen on the 404 and 500 pages](#elements-seen-on-the-404-and-500-pages)
+        * [Elements seen on the top tips page](#elements-seen-on-the-top-tips-page)
+        * [Elements seen on the login page](#elements-seen-on-the-login-page)
+        * [Elements seen on the signup page](#elements-seen-on-the-signup-page)
+        * [Elements seen on the profile page](#elements-seen-on-the-profile-page)
+        * [Elements seen on the edit page](#elements-seen-on-the-edit-page)
+        * [Elements seen on the add tips page](#elements-seen-on-the-add-tips-page)
+        * [Logout function](#logout-function)
     * [Features left to implement](#features-left-to-implement)
     * [Bugs and Fixes for Future Releases After Testing](#bugs-and-fixes-for-future-releases-after-testing)
 3. [Technologies Used](#technologies-used)
@@ -55,7 +61,7 @@ The web app can be viewed on Desktop, Tablet and Mobile devices. Click [here](ht
 
 The goal of this web app is to give the general public a platform to share their advice with others and also gain insights into other peoples experiences before embarking on their own renovation project.
 
-**Target audience is:**
+Target audience is:
 
 * People who are considering starting a renovation project.
 * People who are currently engaged in a renovation project.
@@ -182,7 +188,7 @@ If you are unable to access the mockup links above please see the mockup images 
 
 ### Existing Features
 
-#### Elements seen on the homepage
+### Elements seen on the homepage
 
 * **Layout and Style**
     * I wanted the web app to have an appearance that was associated with industrial colours and style. My aim was to have a lot of white and grey to reflect the industrial theme but also to layer on top of that a artistic brush stroke style to soften the look and feel. I kept all of the content in a square format to refelct the blocks that are used in building material.
@@ -208,14 +214,14 @@ If you are unable to access the mockup links above please see the mockup images 
 * **Second Parallax**
     * Displays a background image of a modern kitchen. On top of the image sits text with a button linking to the public Top Tips page. The button has wave effects when on `hover` and clicked.
 
-#### Elements seen on the 404 and 500 pages
+### Elements seen on the 404 and 500 pages
 
 * **Layout and Style**
     * A white page with both a header and button reflecting the same styling.
     * The button links to the Homepage.
     * The button has wave effects when on `hover` and clicked.
 
-#### Elements seen on the Top Tips page
+### Elements seen on the Top Tips page
 
 * **Search Bar**
     * A search bar displays at the top of the page. The user can enter any words and the function will search through all the tips stored in the database and return the results. If there are no results the user will see a flash message informing them that no results were found. Below the search bar there are two buttons, search and reset, the search button when clicked starts the function and the reset button restores the Top Tips page and displays all of the tips. Both buttons have waves effects when on `hover` and clicked.
@@ -259,10 +265,6 @@ If you are unable to access the mockup links above please see the mockup images 
 * **Logout**
     * Upon clicking the Logout link in the navbar the user is redirected to the Login page with a flash message "you are logged out".
 
-### MongoDB
-
-* **Data Schema**
-Click [here](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/data_schema.jpg?raw=true)
 
 ### Features left to implement
 
@@ -291,6 +293,8 @@ Click [here](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation
 ### Database
 
 * MongoDB - document key vaue pairs database.
+* Data Schema - 
+Click [here](https://github.com/Gmanprodev/Renovate-it/blob/master/documentation/testing/test_images/data_schema.jpg?raw=true)
 
 ### Libraries
 
@@ -348,13 +352,13 @@ This web app was developed in Gitpod and pushed to the remote repository, GitHub
 ### How to deploy this project - with Heroku:
 * From the terminal: type "pip3 freeze --local > requirements.txt" to update the list of requirements needed to run this application.
 * Type " echo web: python app.py > Procfile " to create the Procfile.
-* Go to Heroku and if you don't have it create an account.
+* Go to Heroku (create an account if needed).
 * Click on "New" on the top right corner and select "Create new app". In the modal, add a name and select the region, then click "Create app".
-* The way I decided to use is via GitHub. To select this method click on "connect to GitHub" and select the right repository. Click on connect.
+* To use GitHub as your repo. Click on "connect to GitHub" and select the right repository. Click on connect.
 * Before selecting "Enable Automatic Deploys" go to the setting!
-* The environment variables are hidden so we will have to write them manually. Do do this, from settings click on "Reveal config vars" and insert your variables.
-* Go back to the terminal in GitPod and push both the requirements.txt and the Procfile one at the time, with their respective commits.
-* We can now go back to Heroku and click on "Enable Automatic Deployment". Next click on "Deploy Branch".
+* The environment variables are hidden so we they need to be written manually. To do this, from settings click on "Reveal config vars" and insert your variables.
+* Go back to the terminal in GitPod and push both the requirements.txt and the Procfile, with their respective commits.
+* Now go back to Heroku and click on "Enable Automatic Deployment". Next click on "Deploy Branch".
 * The website is now successfully deployed and you can view it by clicking on "Open app".
 
 **Used commands during deployment:**
@@ -362,17 +366,6 @@ This web app was developed in Gitpod and pushed to the remote repository, GitHub
 * `git commit -m "text message here"` - to commit the files.
 * `git push` - to push to origin master branch on to GitHub.
 * `git status` - to see the current status of the files.
-
-### Hosting on GitHub Pages
-* Log into GitHub.
-* From the list of repositories choose [Renovate-it](https://github.com/Gmanprodev/Renovate-it).
-* Go to settings.
-* Scroll down to GitHub Pages section.
-* Select as a source **master branch**.
-* The page is now automatically refreshed and the project is deployed.
-* To access the project scroll down again to GitHub Pages section and click on the provided link.
-
-For more detailed information regarding deployment to GitHub Pages click [here](https://pages.github.com/).
 
 ### How to run this project locally
 
@@ -396,7 +389,7 @@ All content in this web app was written by me.
 
 ### Media
 
-**All Images & Audio**
+#### All Images
    * All of the images used in the web app are free and do not require permission to use.
 
 
@@ -405,7 +398,7 @@ All content in this web app was written by me.
 
 #### Examples and Tutorials and Samples
 
-* [Code Institute](https://codeinstitute.net/) - I used the Task Manager mini project to build my code foundations and then completely cistomised it thereafter.
+* [Code Institute](https://codeinstitute.net/) - I used the Task Manager mini project to build my code foundations and then completely customised it thereafter.
    
 
 #### Pages used for information
